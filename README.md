@@ -2,7 +2,7 @@
 
 A 1.5B-parameter Vision-Language-Action model trained on the [LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO) robotic manipulation benchmark — built from scratch without the cross-embodiment pretraining (Open X-Embodiment) that most published VLAs rely on.
 
-This repo is a learning-oriented write-up. It is not an attempt to beat state-of-the-art. The goal is to characterize what a small, pretraining-free VLA actually does: where it is strong, where it fails, and which architectural decisions are load-bearing.
+This repo is a learning-oriented write-up. It is not an attempt to beat state-of-the-art (compute requirements too large). The goal is to characterize what a small, pretraining-free VLA actually does: where it is strong, where it fails, and which architectural decisions are load-bearing.
 
 ---
 
