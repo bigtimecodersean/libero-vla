@@ -1,0 +1,1125 @@
+[setup] device=cuda amp=True dtype=torch.bfloat16
+[data] loading ['libero_spatial', 'libero_object', 'libero_goal', 'libero_10'] from data/libero (wrist=True proprio=True augment=True)
+[data] train=288464 val=32111 (2.8s)
+[model] building LIBEROVLA ...
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 9160.47it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 9411.88it/s]
+[1mSiglipVisionModel LOAD REPORT[0m from: google/siglip-base-patch16-224
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+text_model.head.weight                                       | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[model] built in 22.0s, trainable=28.41M
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /root/.netrc.
+wandb: Currently logged in as: seankellymcgowan (seankellymcgowan-kyilkhor) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 7ofkm0sv
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /workspace/libero_vla/wandb/run-20260419_223854-7ofkm0sv
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run joint-run-b
+wandb: ⭐️ View project at https://wandb.ai/seankellymcgowan-kyilkhor/libero-vla
+wandb: 🚀 View run at https://wandb.ai/seankellymcgowan-kyilkhor/libero-vla/runs/7ofkm0sv
+[train] starting from step 0 -> 50000
+[step     50/50000] loss=1.3371  lr=4.90e-06  grad=7.08  63.0 sa/s
+[step    100/50000] loss=1.1327  lr=9.90e-06  grad=7.92  71.8 sa/s
+[step    150/50000] loss=0.6887  lr=1.49e-05  grad=5.75  71.8 sa/s
+[step    200/50000] loss=0.5244  lr=1.99e-05  grad=7.88  71.9 sa/s
+[step    250/50000] loss=0.4694  lr=2.49e-05  grad=5.72  71.8 sa/s
+[step    300/50000] loss=0.4322  lr=2.99e-05  grad=7.00  71.9 sa/s
+[step    350/50000] loss=0.4324  lr=3.49e-05  grad=10.44  71.9 sa/s
+[step    400/50000] loss=0.4130  lr=3.99e-05  grad=3.57  71.9 sa/s
+[step    450/50000] loss=0.3894  lr=4.49e-05  grad=4.29  71.9 sa/s
+[step    500/50000] loss=0.3728  lr=4.99e-05  grad=3.98  71.9 sa/s
+[step    550/50000] loss=0.3627  lr=5.00e-05  grad=4.08  71.9 sa/s
+[step    600/50000] loss=0.3513  lr=5.00e-05  grad=3.23  71.9 sa/s
+[step    650/50000] loss=0.3457  lr=5.00e-05  grad=3.47  72.0 sa/s
+[step    700/50000] loss=0.3340  lr=5.00e-05  grad=4.06  71.8 sa/s
+[step    750/50000] loss=0.3328  lr=5.00e-05  grad=2.61  71.8 sa/s
+[step    800/50000] loss=0.3261  lr=5.00e-05  grad=2.02  71.8 sa/s
+[step    850/50000] loss=0.3165  lr=5.00e-05  grad=2.55  71.8 sa/s
+[step    900/50000] loss=0.3201  lr=5.00e-05  grad=3.60  71.9 sa/s
+[step    950/50000] loss=0.2993  lr=5.00e-05  grad=3.80  71.9 sa/s
+[step   1000/50000] loss=0.2987  lr=5.00e-05  grad=2.60  71.9 sa/s
+[step   1050/50000] loss=0.3091  lr=5.00e-05  grad=2.76  71.9 sa/s
+[step   1100/50000] loss=0.2918  lr=5.00e-05  grad=2.99  71.9 sa/s
+[step   1150/50000] loss=0.2789  lr=5.00e-05  grad=2.24  71.9 sa/s
+[step   1200/50000] loss=0.2829  lr=5.00e-05  grad=2.46  71.9 sa/s
+[step   1250/50000] loss=0.2843  lr=5.00e-05  grad=2.58  71.9 sa/s
+[step   1300/50000] loss=0.2711  lr=5.00e-05  grad=3.02  72.0 sa/s
+[step   1350/50000] loss=0.2694  lr=5.00e-05  grad=3.05  71.9 sa/s
+[step   1400/50000] loss=0.2675  lr=5.00e-05  grad=2.93  71.9 sa/s
+[step   1450/50000] loss=0.2689  lr=5.00e-05  grad=2.28  72.0 sa/s
+[step   1500/50000] loss=0.2542  lr=4.99e-05  grad=2.54  71.9 sa/s
+[step   1550/50000] loss=0.2682  lr=4.99e-05  grad=2.18  71.9 sa/s
+[step   1600/50000] loss=0.2511  lr=4.99e-05  grad=1.91  71.9 sa/s
+[step   1650/50000] loss=0.2649  lr=4.99e-05  grad=1.88  72.0 sa/s
+[step   1700/50000] loss=0.2575  lr=4.99e-05  grad=2.26  71.9 sa/s
+[step   1750/50000] loss=0.2430  lr=4.99e-05  grad=2.50  72.0 sa/s
+[step   1800/50000] loss=0.2486  lr=4.99e-05  grad=1.66  72.0 sa/s
+[step   1850/50000] loss=0.2435  lr=4.99e-05  grad=1.75  72.0 sa/s
+[step   1900/50000] loss=0.2510  lr=4.99e-05  grad=2.58  72.0 sa/s
+[step   1950/50000] loss=0.2454  lr=4.99e-05  grad=1.87  72.0 sa/s
+[step   2000/50000] loss=0.2337  lr=4.99e-05  grad=2.22  72.0 sa/s
+[eval    2000] val_loss=0.3026  (5.5s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step   2050/50000] loss=0.2424  lr=4.99e-05  grad=2.35  54.1 sa/s
+[step   2100/50000] loss=0.2363  lr=4.99e-05  grad=2.41  71.9 sa/s
+[step   2150/50000] loss=0.2400  lr=4.99e-05  grad=2.00  71.9 sa/s
+[step   2200/50000] loss=0.2479  lr=4.99e-05  grad=2.02  71.9 sa/s
+[step   2250/50000] loss=0.2358  lr=4.98e-05  grad=2.47  71.9 sa/s
+[step   2300/50000] loss=0.2273  lr=4.98e-05  grad=1.85  71.2 sa/s
+[step   2350/50000] loss=0.2385  lr=4.98e-05  grad=1.63  71.9 sa/s
+[step   2400/50000] loss=0.2311  lr=4.98e-05  grad=2.13  71.9 sa/s
+[step   2450/50000] loss=0.2352  lr=4.98e-05  grad=2.10  71.9 sa/s
+[step   2500/50000] loss=0.2260  lr=4.98e-05  grad=1.89  71.8 sa/s
+[step   2550/50000] loss=0.2282  lr=4.98e-05  grad=2.18  71.9 sa/s
+[step   2600/50000] loss=0.2332  lr=4.98e-05  grad=1.89  71.7 sa/s
+[step   2650/50000] loss=0.2213  lr=4.98e-05  grad=1.34  71.9 sa/s
+[step   2700/50000] loss=0.2278  lr=4.98e-05  grad=1.75  72.0 sa/s
+[step   2750/50000] loss=0.2287  lr=4.97e-05  grad=1.75  72.0 sa/s
+[step   2800/50000] loss=0.2236  lr=4.97e-05  grad=2.06  72.0 sa/s
+[step   2850/50000] loss=0.2226  lr=4.97e-05  grad=1.97  71.9 sa/s
+[step   2900/50000] loss=0.2205  lr=4.97e-05  grad=2.18  72.0 sa/s
+[step   2950/50000] loss=0.2251  lr=4.97e-05  grad=1.11  72.0 sa/s
+[step   3000/50000] loss=0.2214  lr=4.97e-05  grad=2.35  71.9 sa/s
+[step   3050/50000] loss=0.2224  lr=4.97e-05  grad=1.03  71.9 sa/s
+[step   3100/50000] loss=0.2106  lr=4.97e-05  grad=1.62  71.9 sa/s
+[step   3150/50000] loss=0.2162  lr=4.96e-05  grad=2.33  71.9 sa/s
+[step   3200/50000] loss=0.2203  lr=4.96e-05  grad=1.66  71.9 sa/s
+[step   3250/50000] loss=0.2140  lr=4.96e-05  grad=1.85  71.9 sa/s
+[step   3300/50000] loss=0.2175  lr=4.96e-05  grad=2.31  71.9 sa/s
+[step   3350/50000] loss=0.2328  lr=4.96e-05  grad=1.65  72.0 sa/s
+[step   3400/50000] loss=0.2113  lr=4.96e-05  grad=1.98  72.0 sa/s
+[step   3450/50000] loss=0.2238  lr=4.96e-05  grad=2.07  72.0 sa/s
+[step   3500/50000] loss=0.2202  lr=4.95e-05  grad=1.46  72.0 sa/s
+[step   3550/50000] loss=0.2171  lr=4.95e-05  grad=1.70  72.0 sa/s
+[step   3600/50000] loss=0.2194  lr=4.95e-05  grad=1.68  72.0 sa/s
+[step   3650/50000] loss=0.2117  lr=4.95e-05  grad=1.82  72.0 sa/s
+[step   3700/50000] loss=0.2046  lr=4.95e-05  grad=1.70  72.0 sa/s
+[step   3750/50000] loss=0.2102  lr=4.95e-05  grad=1.63  72.0 sa/s
+[step   3800/50000] loss=0.2114  lr=4.95e-05  grad=1.98  72.0 sa/s
+[step   3850/50000] loss=0.2075  lr=4.94e-05  grad=2.46  72.0 sa/s
+[step   3900/50000] loss=0.2064  lr=4.94e-05  grad=1.69  71.9 sa/s
+[step   3950/50000] loss=0.2100  lr=4.94e-05  grad=1.83  71.9 sa/s
+[step   4000/50000] loss=0.2044  lr=4.94e-05  grad=2.35  72.0 sa/s
+[eval    4000] val_loss=0.2679  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step   4050/50000] loss=0.2126  lr=4.94e-05  grad=1.77  54.4 sa/s
+[step   4100/50000] loss=0.2113  lr=4.94e-05  grad=1.65  71.9 sa/s
+[step   4150/50000] loss=0.2055  lr=4.93e-05  grad=1.26  71.9 sa/s
+[step   4200/50000] loss=0.2068  lr=4.93e-05  grad=1.82  71.9 sa/s
+[step   4250/50000] loss=0.2021  lr=4.93e-05  grad=1.74  71.9 sa/s
+[step   4300/50000] loss=0.2020  lr=4.93e-05  grad=1.73  71.9 sa/s
+[step   4350/50000] loss=0.1952  lr=4.93e-05  grad=1.57  71.8 sa/s
+[step   4400/50000] loss=0.1951  lr=4.92e-05  grad=2.18  71.9 sa/s
+[step   4450/50000] loss=0.1929  lr=4.92e-05  grad=2.42  71.9 sa/s
+[step   4500/50000] loss=0.1921  lr=4.92e-05  grad=1.33  71.9 sa/s
+[step   4550/50000] loss=0.1889  lr=4.92e-05  grad=1.97  71.9 sa/s
+[step   4600/50000] loss=0.1843  lr=4.92e-05  grad=2.55  71.9 sa/s
+[step   4650/50000] loss=0.1883  lr=4.91e-05  grad=1.56  71.9 sa/s
+[step   4700/50000] loss=0.1844  lr=4.91e-05  grad=1.45  71.9 sa/s
+[step   4750/50000] loss=0.1825  lr=4.91e-05  grad=1.15  71.9 sa/s
+[step   4800/50000] loss=0.1819  lr=4.91e-05  grad=1.63  71.8 sa/s
+[step   4850/50000] loss=0.1792  lr=4.91e-05  grad=1.36  71.8 sa/s
+[step   4900/50000] loss=0.1888  lr=4.90e-05  grad=2.09  71.9 sa/s
+[step   4950/50000] loss=0.1816  lr=4.90e-05  grad=1.70  71.9 sa/s
+[step   5000/50000] loss=0.1743  lr=4.90e-05  grad=1.21  71.9 sa/s
+[step   5050/50000] loss=0.1728  lr=4.90e-05  grad=1.82  71.9 sa/s
+[step   5100/50000] loss=0.1853  lr=4.89e-05  grad=2.39  71.9 sa/s
+[step   5150/50000] loss=0.1770  lr=4.89e-05  grad=2.04  71.9 sa/s
+[step   5200/50000] loss=0.1826  lr=4.89e-05  grad=1.19  71.9 sa/s
+[step   5250/50000] loss=0.1754  lr=4.89e-05  grad=1.49  71.9 sa/s
+[step   5300/50000] loss=0.1770  lr=4.88e-05  grad=1.30  71.9 sa/s
+[step   5350/50000] loss=0.1790  lr=4.88e-05  grad=1.28  71.9 sa/s
+[step   5400/50000] loss=0.1745  lr=4.88e-05  grad=1.86  71.9 sa/s
+[step   5450/50000] loss=0.1750  lr=4.88e-05  grad=1.85  71.9 sa/s
+[step   5500/50000] loss=0.1716  lr=4.88e-05  grad=0.88  71.9 sa/s
+[step   5550/50000] loss=0.1732  lr=4.87e-05  grad=1.20  71.8 sa/s
+[step   5600/50000] loss=0.1742  lr=4.87e-05  grad=1.37  71.9 sa/s
+[step   5650/50000] loss=0.1715  lr=4.87e-05  grad=1.78  71.9 sa/s
+[step   5700/50000] loss=0.1663  lr=4.87e-05  grad=2.22  71.9 sa/s
+[step   5750/50000] loss=0.1694  lr=4.86e-05  grad=1.46  71.9 sa/s
+[step   5800/50000] loss=0.1683  lr=4.86e-05  grad=1.05  71.9 sa/s
+[step   5850/50000] loss=0.1699  lr=4.86e-05  grad=1.41  71.9 sa/s
+[step   5900/50000] loss=0.1669  lr=4.85e-05  grad=2.32  71.9 sa/s
+[step   5950/50000] loss=0.1731  lr=4.85e-05  grad=1.56  71.9 sa/s
+[step   6000/50000] loss=0.1684  lr=4.85e-05  grad=1.73  71.9 sa/s
+[eval    6000] val_loss=0.2065  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step   6050/50000] loss=0.1693  lr=4.85e-05  grad=1.69  54.9 sa/s
+[step   6100/50000] loss=0.1685  lr=4.84e-05  grad=1.10  71.8 sa/s
+[step   6150/50000] loss=0.1672  lr=4.84e-05  grad=1.74  71.7 sa/s
+[step   6200/50000] loss=0.1642  lr=4.84e-05  grad=1.78  71.8 sa/s
+[step   6250/50000] loss=0.1647  lr=4.84e-05  grad=1.74  71.7 sa/s
+[step   6300/50000] loss=0.1629  lr=4.83e-05  grad=1.53  71.8 sa/s
+[step   6350/50000] loss=0.1584  lr=4.83e-05  grad=1.38  71.8 sa/s
+[step   6400/50000] loss=0.1638  lr=4.83e-05  grad=1.06  71.8 sa/s
+[step   6450/50000] loss=0.1672  lr=4.82e-05  grad=1.15  71.9 sa/s
+[step   6500/50000] loss=0.1691  lr=4.82e-05  grad=1.45  71.8 sa/s
+[step   6550/50000] loss=0.1696  lr=4.82e-05  grad=1.43  71.8 sa/s
+[step   6600/50000] loss=0.1598  lr=4.82e-05  grad=1.17  71.8 sa/s
+[step   6650/50000] loss=0.1575  lr=4.81e-05  grad=2.13  71.9 sa/s
+[step   6700/50000] loss=0.1548  lr=4.81e-05  grad=1.23  71.9 sa/s
+[step   6750/50000] loss=0.1578  lr=4.81e-05  grad=1.87  71.8 sa/s
+[step   6800/50000] loss=0.1664  lr=4.80e-05  grad=1.13  71.8 sa/s
+[step   6850/50000] loss=0.1637  lr=4.80e-05  grad=1.12  71.8 sa/s
+[step   6900/50000] loss=0.1605  lr=4.80e-05  grad=2.24  71.7 sa/s
+[step   6950/50000] loss=0.1688  lr=4.79e-05  grad=1.56  71.7 sa/s
+[step   7000/50000] loss=0.1570  lr=4.79e-05  grad=1.40  71.7 sa/s
+[step   7050/50000] loss=0.1618  lr=4.79e-05  grad=2.10  71.7 sa/s
+[step   7100/50000] loss=0.1611  lr=4.78e-05  grad=1.44  71.7 sa/s
+[step   7150/50000] loss=0.1576  lr=4.78e-05  grad=1.33  71.7 sa/s
+[step   7200/50000] loss=0.1649  lr=4.78e-05  grad=1.46  71.6 sa/s
+[step   7250/50000] loss=0.1595  lr=4.77e-05  grad=2.34  71.7 sa/s
+[step   7300/50000] loss=0.1632  lr=4.77e-05  grad=1.87  71.5 sa/s
+[step   7350/50000] loss=0.1568  lr=4.77e-05  grad=1.16  71.6 sa/s
+[step   7400/50000] loss=0.1654  lr=4.76e-05  grad=1.23  71.6 sa/s
+[step   7450/50000] loss=0.1628  lr=4.76e-05  grad=1.28  71.7 sa/s
+[step   7500/50000] loss=0.1584  lr=4.76e-05  grad=1.05  71.6 sa/s
+[step   7550/50000] loss=0.1525  lr=4.75e-05  grad=1.96  71.7 sa/s
+[step   7600/50000] loss=0.1649  lr=4.75e-05  grad=0.85  71.7 sa/s
+[step   7650/50000] loss=0.1543  lr=4.75e-05  grad=1.23  71.6 sa/s
+[step   7700/50000] loss=0.1602  lr=4.74e-05  grad=1.27  71.7 sa/s
+[step   7750/50000] loss=0.1609  lr=4.74e-05  grad=1.48  71.8 sa/s
+[step   7800/50000] loss=0.1573  lr=4.74e-05  grad=1.70  71.9 sa/s
+[step   7850/50000] loss=0.1570  lr=4.73e-05  grad=1.17  71.8 sa/s
+[step   7900/50000] loss=0.1561  lr=4.73e-05  grad=1.08  71.7 sa/s
+[step   7950/50000] loss=0.1605  lr=4.73e-05  grad=1.73  71.7 sa/s
+[step   8000/50000] loss=0.1598  lr=4.72e-05  grad=1.86  71.4 sa/s
+[eval    8000] val_loss=0.1891  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step   8050/50000] loss=0.1668  lr=4.72e-05  grad=1.14  54.7 sa/s
+[step   8100/50000] loss=0.1579  lr=4.71e-05  grad=1.89  71.8 sa/s
+[step   8150/50000] loss=0.1587  lr=4.71e-05  grad=1.21  71.8 sa/s
+[step   8200/50000] loss=0.1577  lr=4.71e-05  grad=1.41  71.7 sa/s
+[step   8250/50000] loss=0.1600  lr=4.70e-05  grad=1.35  71.8 sa/s
+[step   8300/50000] loss=0.1539  lr=4.70e-05  grad=1.98  71.8 sa/s
+[step   8350/50000] loss=0.1539  lr=4.70e-05  grad=1.27  71.9 sa/s
+[step   8400/50000] loss=0.1529  lr=4.69e-05  grad=1.93  71.8 sa/s
+[step   8450/50000] loss=0.1655  lr=4.69e-05  grad=1.26  71.9 sa/s
+[step   8500/50000] loss=0.1588  lr=4.68e-05  grad=1.34  71.9 sa/s
+[step   8550/50000] loss=0.1538  lr=4.68e-05  grad=2.07  71.9 sa/s
+[step   8600/50000] loss=0.1548  lr=4.68e-05  grad=1.98  71.9 sa/s
+[step   8650/50000] loss=0.1484  lr=4.67e-05  grad=1.96  71.9 sa/s
+[step   8700/50000] loss=0.1544  lr=4.67e-05  grad=1.88  71.9 sa/s
+[step   8750/50000] loss=0.1473  lr=4.67e-05  grad=1.57  71.9 sa/s
+[step   8800/50000] loss=0.1558  lr=4.66e-05  grad=0.93  71.9 sa/s
+[step   8850/50000] loss=0.1540  lr=4.66e-05  grad=1.67  71.9 sa/s
+[step   8900/50000] loss=0.1563  lr=4.65e-05  grad=2.15  71.9 sa/s
+[step   8950/50000] loss=0.1497  lr=4.65e-05  grad=1.66  71.9 sa/s
+[step   9000/50000] loss=0.1582  lr=4.65e-05  grad=1.18  71.9 sa/s
+[step   9050/50000] loss=0.1597  lr=4.64e-05  grad=1.60  70.0 sa/s
+[step   9100/50000] loss=0.1550  lr=4.64e-05  grad=1.42  71.9 sa/s
+[step   9150/50000] loss=0.1518  lr=4.63e-05  grad=0.98  71.9 sa/s
+[step   9200/50000] loss=0.1561  lr=4.63e-05  grad=1.66  71.9 sa/s
+[step   9250/50000] loss=0.1493  lr=4.62e-05  grad=1.54  71.9 sa/s
+[step   9300/50000] loss=0.1564  lr=4.62e-05  grad=1.87  71.9 sa/s
+[step   9350/50000] loss=0.1519  lr=4.62e-05  grad=1.34  71.9 sa/s
+[step   9400/50000] loss=0.1457  lr=4.61e-05  grad=1.56  71.8 sa/s
+[step   9450/50000] loss=0.1516  lr=4.61e-05  grad=1.12  71.9 sa/s
+[step   9500/50000] loss=0.1523  lr=4.60e-05  grad=0.98  71.9 sa/s
+[step   9550/50000] loss=0.1489  lr=4.60e-05  grad=1.15  71.8 sa/s
+[step   9600/50000] loss=0.1451  lr=4.59e-05  grad=1.26  71.9 sa/s
+[step   9650/50000] loss=0.1493  lr=4.59e-05  grad=1.21  71.8 sa/s
+[step   9700/50000] loss=0.1553  lr=4.59e-05  grad=0.95  71.9 sa/s
+[step   9750/50000] loss=0.1545  lr=4.58e-05  grad=1.30  71.9 sa/s
+[step   9800/50000] loss=0.1535  lr=4.58e-05  grad=1.41  71.9 sa/s
+[step   9850/50000] loss=0.1554  lr=4.57e-05  grad=1.38  71.9 sa/s
+[step   9900/50000] loss=0.1576  lr=4.57e-05  grad=1.17  71.9 sa/s
+[step   9950/50000] loss=0.1516  lr=4.56e-05  grad=1.14  71.9 sa/s
+[step  10000/50000] loss=0.1433  lr=4.56e-05  grad=1.42  71.8 sa/s
+[eval   10000] val_loss=0.1848  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  10050/50000] loss=0.1551  lr=4.55e-05  grad=1.49  54.6 sa/s
+[step  10100/50000] loss=0.1531  lr=4.55e-05  grad=1.73  71.9 sa/s
+[step  10150/50000] loss=0.1425  lr=4.55e-05  grad=0.97  71.9 sa/s
+[step  10200/50000] loss=0.1609  lr=4.54e-05  grad=1.54  71.9 sa/s
+[step  10250/50000] loss=0.1556  lr=4.54e-05  grad=1.62  71.9 sa/s
+[step  10300/50000] loss=0.1496  lr=4.53e-05  grad=1.41  71.9 sa/s
+[step  10350/50000] loss=0.1439  lr=4.53e-05  grad=1.76  71.9 sa/s
+[step  10400/50000] loss=0.1479  lr=4.52e-05  grad=2.05  71.9 sa/s
+[step  10450/50000] loss=0.1487  lr=4.52e-05  grad=1.20  71.9 sa/s
+[step  10500/50000] loss=0.1471  lr=4.51e-05  grad=1.21  71.8 sa/s
+[step  10550/50000] loss=0.1463  lr=4.51e-05  grad=1.53  71.9 sa/s
+[step  10600/50000] loss=0.1405  lr=4.50e-05  grad=0.94  71.8 sa/s
+[step  10650/50000] loss=0.1419  lr=4.50e-05  grad=1.46  71.9 sa/s
+[step  10700/50000] loss=0.1480  lr=4.49e-05  grad=1.27  71.8 sa/s
+[step  10750/50000] loss=0.1400  lr=4.49e-05  grad=1.70  71.9 sa/s
+[step  10800/50000] loss=0.1459  lr=4.48e-05  grad=1.69  71.8 sa/s
+[step  10850/50000] loss=0.1461  lr=4.48e-05  grad=1.38  71.8 sa/s
+[step  10900/50000] loss=0.1513  lr=4.47e-05  grad=1.30  71.8 sa/s
+[step  10950/50000] loss=0.1501  lr=4.47e-05  grad=1.79  71.7 sa/s
+[step  11000/50000] loss=0.1464  lr=4.47e-05  grad=1.41  71.5 sa/s
+[step  11050/50000] loss=0.1483  lr=4.46e-05  grad=1.01  71.6 sa/s
+[step  11100/50000] loss=0.1445  lr=4.46e-05  grad=1.80  71.7 sa/s
+[step  11150/50000] loss=0.1467  lr=4.45e-05  grad=0.83  71.8 sa/s
+[step  11200/50000] loss=0.1504  lr=4.45e-05  grad=1.54  71.7 sa/s
+[step  11250/50000] loss=0.1488  lr=4.44e-05  grad=1.69  71.8 sa/s
+[step  11300/50000] loss=0.1512  lr=4.44e-05  grad=1.20  71.8 sa/s
+[step  11350/50000] loss=0.1529  lr=4.43e-05  grad=1.18  71.8 sa/s
+[step  11400/50000] loss=0.1415  lr=4.43e-05  grad=1.33  71.9 sa/s
+[step  11450/50000] loss=0.1419  lr=4.42e-05  grad=1.11  71.8 sa/s
+[step  11500/50000] loss=0.1491  lr=4.42e-05  grad=1.44  71.8 sa/s
+[step  11550/50000] loss=0.1425  lr=4.41e-05  grad=1.20  71.9 sa/s
+[step  11600/50000] loss=0.1412  lr=4.40e-05  grad=1.44  71.8 sa/s
+[step  11650/50000] loss=0.1549  lr=4.40e-05  grad=0.83  71.8 sa/s
+[step  11700/50000] loss=0.1518  lr=4.39e-05  grad=0.76  71.9 sa/s
+[step  11750/50000] loss=0.1465  lr=4.39e-05  grad=1.50  71.9 sa/s
+[step  11800/50000] loss=0.1396  lr=4.38e-05  grad=1.53  71.9 sa/s
+[step  11850/50000] loss=0.1436  lr=4.38e-05  grad=1.32  71.9 sa/s
+[step  11900/50000] loss=0.1437  lr=4.37e-05  grad=1.64  71.9 sa/s
+[step  11950/50000] loss=0.1517  lr=4.37e-05  grad=1.27  71.4 sa/s
+[step  12000/50000] loss=0.1461  lr=4.36e-05  grad=1.19  71.8 sa/s
+[eval   12000] val_loss=0.1666  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  12050/50000] loss=0.1439  lr=4.36e-05  grad=1.10  54.5 sa/s
+[step  12100/50000] loss=0.1447  lr=4.35e-05  grad=0.83  71.9 sa/s
+[step  12150/50000] loss=0.1477  lr=4.35e-05  grad=1.32  72.0 sa/s
+[step  12200/50000] loss=0.1493  lr=4.34e-05  grad=1.53  71.9 sa/s
+[step  12250/50000] loss=0.1521  lr=4.34e-05  grad=1.60  71.9 sa/s
+[step  12300/50000] loss=0.1478  lr=4.33e-05  grad=1.94  71.9 sa/s
+[step  12350/50000] loss=0.1476  lr=4.33e-05  grad=1.06  72.0 sa/s
+[step  12400/50000] loss=0.1427  lr=4.32e-05  grad=1.61  72.0 sa/s
+[step  12450/50000] loss=0.1419  lr=4.31e-05  grad=1.10  72.0 sa/s
+[step  12500/50000] loss=0.1439  lr=4.31e-05  grad=1.18  72.0 sa/s
+[step  12550/50000] loss=0.1429  lr=4.30e-05  grad=2.04  71.9 sa/s
+[step  12600/50000] loss=0.1355  lr=4.30e-05  grad=1.25  71.9 sa/s
+[step  12650/50000] loss=0.1491  lr=4.29e-05  grad=1.37  71.9 sa/s
+[step  12700/50000] loss=0.1377  lr=4.29e-05  grad=1.38  72.0 sa/s
+[step  12750/50000] loss=0.1414  lr=4.28e-05  grad=1.40  72.0 sa/s
+[step  12800/50000] loss=0.1494  lr=4.28e-05  grad=1.58  72.0 sa/s
+[step  12850/50000] loss=0.1461  lr=4.27e-05  grad=1.38  72.0 sa/s
+[step  12900/50000] loss=0.1424  lr=4.27e-05  grad=0.80  71.9 sa/s
+[step  12950/50000] loss=0.1385  lr=4.26e-05  grad=1.67  71.7 sa/s
+[step  13000/50000] loss=0.1479  lr=4.25e-05  grad=2.14  71.9 sa/s
+[step  13050/50000] loss=0.1443  lr=4.25e-05  grad=1.56  71.9 sa/s
+[step  13100/50000] loss=0.1474  lr=4.24e-05  grad=0.82  71.8 sa/s
+[step  13150/50000] loss=0.1430  lr=4.24e-05  grad=0.82  72.0 sa/s
+[step  13200/50000] loss=0.1416  lr=4.23e-05  grad=1.52  71.9 sa/s
+[step  13250/50000] loss=0.1476  lr=4.23e-05  grad=1.64  71.9 sa/s
+[step  13300/50000] loss=0.1412  lr=4.22e-05  grad=1.25  71.9 sa/s
+[step  13350/50000] loss=0.1489  lr=4.21e-05  grad=0.86  71.9 sa/s
+[step  13400/50000] loss=0.1427  lr=4.21e-05  grad=1.10  72.0 sa/s
+[step  13450/50000] loss=0.1385  lr=4.20e-05  grad=1.38  72.0 sa/s
+[step  13500/50000] loss=0.1369  lr=4.20e-05  grad=1.17  72.0 sa/s
+[step  13550/50000] loss=0.1460  lr=4.19e-05  grad=1.12  71.9 sa/s
+[step  13600/50000] loss=0.1379  lr=4.18e-05  grad=0.80  71.9 sa/s
+[step  13650/50000] loss=0.1427  lr=4.18e-05  grad=1.16  72.0 sa/s
+[step  13700/50000] loss=0.1451  lr=4.17e-05  grad=0.90  71.9 sa/s
+[step  13750/50000] loss=0.1431  lr=4.17e-05  grad=1.21  72.0 sa/s
+[step  13800/50000] loss=0.1370  lr=4.16e-05  grad=0.92  71.9 sa/s
+[step  13850/50000] loss=0.1386  lr=4.16e-05  grad=1.47  71.9 sa/s
+[step  13900/50000] loss=0.1443  lr=4.15e-05  grad=0.81  71.9 sa/s
+[step  13950/50000] loss=0.1457  lr=4.14e-05  grad=1.12  71.9 sa/s
+[step  14000/50000] loss=0.1410  lr=4.14e-05  grad=1.85  71.9 sa/s
+[eval   14000] val_loss=0.1637  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  14050/50000] loss=0.1406  lr=4.13e-05  grad=1.35  54.7 sa/s
+[step  14100/50000] loss=0.1425  lr=4.13e-05  grad=2.29  72.0 sa/s
+[step  14150/50000] loss=0.1385  lr=4.12e-05  grad=0.95  72.0 sa/s
+[step  14200/50000] loss=0.1429  lr=4.11e-05  grad=1.56  71.5 sa/s
+[step  14250/50000] loss=0.1427  lr=4.11e-05  grad=1.34  72.0 sa/s
+[step  14300/50000] loss=0.1407  lr=4.10e-05  grad=0.69  72.0 sa/s
+[step  14350/50000] loss=0.1377  lr=4.09e-05  grad=1.26  71.9 sa/s
+[step  14400/50000] loss=0.1354  lr=4.09e-05  grad=1.17  72.0 sa/s
+[step  14450/50000] loss=0.1379  lr=4.08e-05  grad=1.15  72.0 sa/s
+[step  14500/50000] loss=0.1448  lr=4.08e-05  grad=1.44  72.0 sa/s
+[step  14550/50000] loss=0.1461  lr=4.07e-05  grad=0.96  71.9 sa/s
+[step  14600/50000] loss=0.1399  lr=4.06e-05  grad=1.62  72.0 sa/s
+[step  14650/50000] loss=0.1354  lr=4.06e-05  grad=1.67  72.0 sa/s
+[step  14700/50000] loss=0.1440  lr=4.05e-05  grad=1.05  72.0 sa/s
+[step  14750/50000] loss=0.1391  lr=4.05e-05  grad=1.37  72.0 sa/s
+[step  14800/50000] loss=0.1328  lr=4.04e-05  grad=1.17  72.0 sa/s
+[step  14850/50000] loss=0.1332  lr=4.03e-05  grad=1.10  72.0 sa/s
+[step  14900/50000] loss=0.1423  lr=4.03e-05  grad=1.56  71.9 sa/s
+[step  14950/50000] loss=0.1415  lr=4.02e-05  grad=0.95  72.0 sa/s
+[step  15000/50000] loss=0.1360  lr=4.01e-05  grad=1.77  72.0 sa/s
+[step  15050/50000] loss=0.1358  lr=4.01e-05  grad=1.12  72.0 sa/s
+[step  15100/50000] loss=0.1411  lr=4.00e-05  grad=1.18  71.8 sa/s
+[step  15150/50000] loss=0.1347  lr=4.00e-05  grad=1.31  71.7 sa/s
+[step  15200/50000] loss=0.1412  lr=3.99e-05  grad=0.86  71.9 sa/s
+[step  15250/50000] loss=0.1347  lr=3.98e-05  grad=0.83  71.9 sa/s
+[step  15300/50000] loss=0.1395  lr=3.98e-05  grad=1.48  71.9 sa/s
+[step  15350/50000] loss=0.1404  lr=3.97e-05  grad=1.10  71.9 sa/s
+[step  15400/50000] loss=0.1423  lr=3.96e-05  grad=1.09  71.9 sa/s
+[step  15450/50000] loss=0.1371  lr=3.96e-05  grad=1.41  72.0 sa/s
+[step  15500/50000] loss=0.1383  lr=3.95e-05  grad=1.12  72.1 sa/s
+[step  15550/50000] loss=0.1320  lr=3.94e-05  grad=0.86  72.1 sa/s
+[step  15600/50000] loss=0.1346  lr=3.94e-05  grad=1.04  72.1 sa/s
+[step  15650/50000] loss=0.1405  lr=3.93e-05  grad=1.06  72.1 sa/s
+[step  15700/50000] loss=0.1426  lr=3.92e-05  grad=2.37  72.1 sa/s
+[step  15750/50000] loss=0.1365  lr=3.92e-05  grad=1.20  71.9 sa/s
+[step  15800/50000] loss=0.1377  lr=3.91e-05  grad=0.88  72.0 sa/s
+[step  15850/50000] loss=0.1334  lr=3.90e-05  grad=1.18  72.0 sa/s
+[step  15900/50000] loss=0.1341  lr=3.90e-05  grad=1.06  71.9 sa/s
+[step  15950/50000] loss=0.1306  lr=3.89e-05  grad=1.34  72.0 sa/s
+[step  16000/50000] loss=0.1367  lr=3.88e-05  grad=1.43  72.0 sa/s
+[eval   16000] val_loss=0.1654  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  16050/50000] loss=0.1443  lr=3.88e-05  grad=0.94  54.8 sa/s
+[step  16100/50000] loss=0.1309  lr=3.87e-05  grad=1.26  72.0 sa/s
+[step  16150/50000] loss=0.1329  lr=3.87e-05  grad=1.14  72.0 sa/s
+[step  16200/50000] loss=0.1339  lr=3.86e-05  grad=1.24  71.9 sa/s
+[step  16250/50000] loss=0.1304  lr=3.85e-05  grad=0.94  71.9 sa/s
+[step  16300/50000] loss=0.1380  lr=3.85e-05  grad=1.08  72.0 sa/s
+[step  16350/50000] loss=0.1328  lr=3.84e-05  grad=0.91  72.0 sa/s
+[step  16400/50000] loss=0.1419  lr=3.83e-05  grad=0.93  72.0 sa/s
+[step  16450/50000] loss=0.1419  lr=3.82e-05  grad=1.41  72.0 sa/s
+[step  16500/50000] loss=0.1396  lr=3.82e-05  grad=1.48  72.0 sa/s
+[step  16550/50000] loss=0.1373  lr=3.81e-05  grad=1.51  71.9 sa/s
+[step  16600/50000] loss=0.1321  lr=3.80e-05  grad=1.24  72.0 sa/s
+[step  16650/50000] loss=0.1306  lr=3.80e-05  grad=1.89  71.9 sa/s
+[step  16700/50000] loss=0.1345  lr=3.79e-05  grad=1.62  71.9 sa/s
+[step  16750/50000] loss=0.1468  lr=3.78e-05  grad=1.98  72.0 sa/s
+[step  16800/50000] loss=0.1379  lr=3.78e-05  grad=1.32  72.0 sa/s
+[step  16850/50000] loss=0.1376  lr=3.77e-05  grad=1.41  72.0 sa/s
+[step  16900/50000] loss=0.1359  lr=3.76e-05  grad=0.82  71.9 sa/s
+[step  16950/50000] loss=0.1385  lr=3.76e-05  grad=1.04  72.0 sa/s
+[step  17000/50000] loss=0.1371  lr=3.75e-05  grad=1.33  71.8 sa/s
+[step  17050/50000] loss=0.1278  lr=3.74e-05  grad=1.30  71.9 sa/s
+[step  17100/50000] loss=0.1376  lr=3.74e-05  grad=0.79  72.0 sa/s
+[step  17150/50000] loss=0.1375  lr=3.73e-05  grad=0.95  72.0 sa/s
+[step  17200/50000] loss=0.1302  lr=3.72e-05  grad=1.42  72.0 sa/s
+[step  17250/50000] loss=0.1351  lr=3.72e-05  grad=1.04  72.0 sa/s
+[step  17300/50000] loss=0.1297  lr=3.71e-05  grad=1.06  72.0 sa/s
+[step  17350/50000] loss=0.1374  lr=3.70e-05  grad=1.28  72.0 sa/s
+[step  17400/50000] loss=0.1438  lr=3.69e-05  grad=1.36  71.9 sa/s
+[step  17450/50000] loss=0.1367  lr=3.69e-05  grad=0.86  72.0 sa/s
+[step  17500/50000] loss=0.1341  lr=3.68e-05  grad=1.35  72.0 sa/s
+[step  17550/50000] loss=0.1345  lr=3.67e-05  grad=0.98  71.9 sa/s
+[step  17600/50000] loss=0.1307  lr=3.67e-05  grad=1.38  72.0 sa/s
+[step  17650/50000] loss=0.1335  lr=3.66e-05  grad=1.38  72.0 sa/s
+[step  17700/50000] loss=0.1352  lr=3.65e-05  grad=1.11  72.0 sa/s
+[step  17750/50000] loss=0.1364  lr=3.65e-05  grad=0.88  72.0 sa/s
+[step  17800/50000] loss=0.1361  lr=3.64e-05  grad=1.23  71.8 sa/s
+[step  17850/50000] loss=0.1356  lr=3.63e-05  grad=1.25  71.7 sa/s
+[step  17900/50000] loss=0.1378  lr=3.62e-05  grad=1.06  71.6 sa/s
+[step  17950/50000] loss=0.1326  lr=3.62e-05  grad=1.23  71.5 sa/s
+[step  18000/50000] loss=0.1346  lr=3.61e-05  grad=1.37  71.6 sa/s
+[eval   18000] val_loss=0.1632  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  18050/50000] loss=0.1328  lr=3.60e-05  grad=1.29  53.2 sa/s
+[step  18100/50000] loss=0.1337  lr=3.60e-05  grad=0.76  71.6 sa/s
+[step  18150/50000] loss=0.1296  lr=3.59e-05  grad=1.04  71.6 sa/s
+[step  18200/50000] loss=0.1287  lr=3.58e-05  grad=1.79  71.6 sa/s
+[step  18250/50000] loss=0.1320  lr=3.57e-05  grad=1.19  71.7 sa/s
+[step  18300/50000] loss=0.1313  lr=3.57e-05  grad=1.13  71.6 sa/s
+[step  18350/50000] loss=0.1357  lr=3.56e-05  grad=1.19  71.3 sa/s
+[step  18400/50000] loss=0.1322  lr=3.55e-05  grad=1.22  71.7 sa/s
+[step  18450/50000] loss=0.1338  lr=3.55e-05  grad=0.83  71.7 sa/s
+[step  18500/50000] loss=0.1347  lr=3.54e-05  grad=1.59  71.7 sa/s
+[step  18550/50000] loss=0.1266  lr=3.53e-05  grad=0.92  71.7 sa/s
+[step  18600/50000] loss=0.1269  lr=3.52e-05  grad=0.94  71.7 sa/s
+[step  18650/50000] loss=0.1305  lr=3.52e-05  grad=1.69  71.7 sa/s
+[step  18700/50000] loss=0.1291  lr=3.51e-05  grad=1.03  71.6 sa/s
+[step  18750/50000] loss=0.1328  lr=3.50e-05  grad=1.07  71.7 sa/s
+[step  18800/50000] loss=0.1366  lr=3.50e-05  grad=0.91  71.7 sa/s
+[step  18850/50000] loss=0.1351  lr=3.49e-05  grad=0.85  71.7 sa/s
+[step  18900/50000] loss=0.1329  lr=3.48e-05  grad=1.14  71.7 sa/s
+[step  18950/50000] loss=0.1399  lr=3.47e-05  grad=1.25  71.7 sa/s
+[step  19000/50000] loss=0.1348  lr=3.47e-05  grad=1.45  71.7 sa/s
+[step  19050/50000] loss=0.1339  lr=3.46e-05  grad=0.98  71.7 sa/s
+[step  19100/50000] loss=0.1315  lr=3.45e-05  grad=0.88  71.6 sa/s
+[step  19150/50000] loss=0.1341  lr=3.44e-05  grad=1.22  71.6 sa/s
+[step  19200/50000] loss=0.1285  lr=3.44e-05  grad=1.26  71.7 sa/s
+[step  19250/50000] loss=0.1375  lr=3.43e-05  grad=0.83  71.6 sa/s
+[step  19300/50000] loss=0.1305  lr=3.42e-05  grad=1.39  71.6 sa/s
+[step  19350/50000] loss=0.1273  lr=3.41e-05  grad=1.19  71.7 sa/s
+[step  19400/50000] loss=0.1303  lr=3.41e-05  grad=1.15  71.7 sa/s
+[step  19450/50000] loss=0.1270  lr=3.40e-05  grad=0.87  71.7 sa/s
+[step  19500/50000] loss=0.1310  lr=3.39e-05  grad=1.19  71.8 sa/s
+[step  19550/50000] loss=0.1259  lr=3.38e-05  grad=1.43  71.8 sa/s
+[step  19600/50000] loss=0.1245  lr=3.38e-05  grad=0.81  71.8 sa/s
+[step  19650/50000] loss=0.1304  lr=3.37e-05  grad=1.20  71.7 sa/s
+[step  19700/50000] loss=0.1344  lr=3.36e-05  grad=1.00  71.9 sa/s
+[step  19750/50000] loss=0.1237  lr=3.36e-05  grad=1.10  71.8 sa/s
+[step  19800/50000] loss=0.1306  lr=3.35e-05  grad=0.93  71.7 sa/s
+[step  19850/50000] loss=0.1307  lr=3.34e-05  grad=0.69  71.8 sa/s
+[step  19900/50000] loss=0.1338  lr=3.33e-05  grad=1.44  71.8 sa/s
+[step  19950/50000] loss=0.1356  lr=3.33e-05  grad=1.06  71.8 sa/s
+[step  20000/50000] loss=0.1350  lr=3.32e-05  grad=1.41  71.9 sa/s
+[eval   20000] val_loss=0.1476  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  20050/50000] loss=0.1339  lr=3.31e-05  grad=0.78  54.5 sa/s
+[step  20100/50000] loss=0.1248  lr=3.30e-05  grad=1.02  71.9 sa/s
+[step  20150/50000] loss=0.1331  lr=3.30e-05  grad=0.97  71.9 sa/s
+[step  20200/50000] loss=0.1299  lr=3.29e-05  grad=1.33  71.9 sa/s
+[step  20250/50000] loss=0.1361  lr=3.28e-05  grad=0.93  71.9 sa/s
+[step  20300/50000] loss=0.1235  lr=3.27e-05  grad=1.41  71.9 sa/s
+[step  20350/50000] loss=0.1359  lr=3.27e-05  grad=1.35  72.0 sa/s
+[step  20400/50000] loss=0.1239  lr=3.26e-05  grad=1.01  71.9 sa/s
+[step  20450/50000] loss=0.1260  lr=3.25e-05  grad=1.09  71.9 sa/s
+[step  20500/50000] loss=0.1326  lr=3.24e-05  grad=0.77  72.0 sa/s
+[step  20550/50000] loss=0.1339  lr=3.23e-05  grad=1.00  71.9 sa/s
+[step  20600/50000] loss=0.1325  lr=3.23e-05  grad=1.19  71.9 sa/s
+[step  20650/50000] loss=0.1302  lr=3.22e-05  grad=1.21  71.9 sa/s
+[step  20700/50000] loss=0.1334  lr=3.21e-05  grad=1.75  71.9 sa/s
+[step  20750/50000] loss=0.1233  lr=3.20e-05  grad=0.92  71.9 sa/s
+[step  20800/50000] loss=0.1314  lr=3.20e-05  grad=0.95  71.8 sa/s
+[step  20850/50000] loss=0.1275  lr=3.19e-05  grad=1.34  71.9 sa/s
+[step  20900/50000] loss=0.1335  lr=3.18e-05  grad=0.68  71.9 sa/s
+[step  20950/50000] loss=0.1388  lr=3.17e-05  grad=0.97  71.8 sa/s
+[step  21000/50000] loss=0.1313  lr=3.17e-05  grad=1.07  71.9 sa/s
+[step  21050/50000] loss=0.1281  lr=3.16e-05  grad=0.78  71.9 sa/s
+[step  21100/50000] loss=0.1371  lr=3.15e-05  grad=1.04  71.9 sa/s
+[step  21150/50000] loss=0.1271  lr=3.14e-05  grad=0.61  72.0 sa/s
+[step  21200/50000] loss=0.1267  lr=3.14e-05  grad=1.71  71.9 sa/s
+[step  21250/50000] loss=0.1256  lr=3.13e-05  grad=0.94  72.0 sa/s
+[step  21300/50000] loss=0.1234  lr=3.12e-05  grad=1.01  71.9 sa/s
+[step  21350/50000] loss=0.1251  lr=3.11e-05  grad=1.26  71.9 sa/s
+[step  21400/50000] loss=0.1290  lr=3.10e-05  grad=0.94  71.9 sa/s
+[step  21450/50000] loss=0.1288  lr=3.10e-05  grad=0.91  71.9 sa/s
+[step  21500/50000] loss=0.1278  lr=3.09e-05  grad=1.43  71.9 sa/s
+[step  21550/50000] loss=0.1313  lr=3.08e-05  grad=0.93  71.7 sa/s
+[step  21600/50000] loss=0.1358  lr=3.07e-05  grad=1.11  71.9 sa/s
+[step  21650/50000] loss=0.1299  lr=3.07e-05  grad=1.45  71.8 sa/s
+[step  21700/50000] loss=0.1269  lr=3.06e-05  grad=0.88  71.8 sa/s
+[step  21750/50000] loss=0.1248  lr=3.05e-05  grad=0.90  71.9 sa/s
+[step  21800/50000] loss=0.1365  lr=3.04e-05  grad=1.11  71.8 sa/s
+[step  21850/50000] loss=0.1247  lr=3.04e-05  grad=0.91  71.6 sa/s
+[step  21900/50000] loss=0.1291  lr=3.03e-05  grad=1.44  71.8 sa/s
+[step  21950/50000] loss=0.1323  lr=3.02e-05  grad=0.87  71.9 sa/s
+[step  22000/50000] loss=0.1355  lr=3.01e-05  grad=1.43  71.9 sa/s
+[eval   22000] val_loss=0.1528  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  22050/50000] loss=0.1309  lr=3.00e-05  grad=0.58  54.4 sa/s
+[step  22100/50000] loss=0.1330  lr=3.00e-05  grad=1.40  71.7 sa/s
+[step  22150/50000] loss=0.1355  lr=2.99e-05  grad=1.35  71.6 sa/s
+[step  22200/50000] loss=0.1287  lr=2.98e-05  grad=0.89  71.7 sa/s
+[step  22250/50000] loss=0.1315  lr=2.97e-05  grad=0.96  71.7 sa/s
+[step  22300/50000] loss=0.1292  lr=2.97e-05  grad=1.41  71.7 sa/s
+[step  22350/50000] loss=0.1239  lr=2.96e-05  grad=2.36  71.7 sa/s
+[step  22400/50000] loss=0.1305  lr=2.95e-05  grad=0.64  71.7 sa/s
+[step  22450/50000] loss=0.1325  lr=2.94e-05  grad=1.04  71.7 sa/s
+[step  22500/50000] loss=0.1232  lr=2.93e-05  grad=0.91  71.7 sa/s
+[step  22550/50000] loss=0.1291  lr=2.93e-05  grad=1.15  71.7 sa/s
+[step  22600/50000] loss=0.1316  lr=2.92e-05  grad=1.49  71.7 sa/s
+[step  22650/50000] loss=0.1304  lr=2.91e-05  grad=1.33  71.8 sa/s
+[step  22700/50000] loss=0.1257  lr=2.90e-05  grad=1.03  71.8 sa/s
+[step  22750/50000] loss=0.1260  lr=2.90e-05  grad=1.81  71.7 sa/s
+[step  22800/50000] loss=0.1248  lr=2.89e-05  grad=0.71  71.8 sa/s
+[step  22850/50000] loss=0.1303  lr=2.88e-05  grad=1.04  71.8 sa/s
+[step  22900/50000] loss=0.1313  lr=2.87e-05  grad=0.88  71.7 sa/s
+[step  22950/50000] loss=0.1261  lr=2.86e-05  grad=0.89  71.7 sa/s
+[step  23000/50000] loss=0.1209  lr=2.86e-05  grad=1.26  71.7 sa/s
+[step  23050/50000] loss=0.1326  lr=2.85e-05  grad=0.80  71.7 sa/s
+[step  23100/50000] loss=0.1312  lr=2.84e-05  grad=1.28  71.7 sa/s
+[step  23150/50000] loss=0.1295  lr=2.83e-05  grad=0.65  71.7 sa/s
+[step  23200/50000] loss=0.1323  lr=2.82e-05  grad=0.73  71.8 sa/s
+[step  23250/50000] loss=0.1322  lr=2.82e-05  grad=1.19  71.8 sa/s
+[step  23300/50000] loss=0.1353  lr=2.81e-05  grad=0.86  71.8 sa/s
+[step  23350/50000] loss=0.1221  lr=2.80e-05  grad=1.45  71.7 sa/s
+[step  23400/50000] loss=0.1296  lr=2.79e-05  grad=1.09  71.8 sa/s
+[step  23450/50000] loss=0.1333  lr=2.79e-05  grad=1.23  71.7 sa/s
+[step  23500/50000] loss=0.1261  lr=2.78e-05  grad=0.80  71.8 sa/s
+[step  23550/50000] loss=0.1253  lr=2.77e-05  grad=0.80  71.8 sa/s
+[step  23600/50000] loss=0.1222  lr=2.76e-05  grad=1.05  71.7 sa/s
+[step  23650/50000] loss=0.1275  lr=2.75e-05  grad=1.01  71.8 sa/s
+[step  23700/50000] loss=0.1307  lr=2.75e-05  grad=1.23  71.7 sa/s
+[step  23750/50000] loss=0.1299  lr=2.74e-05  grad=1.02  71.5 sa/s
+[step  23800/50000] loss=0.1295  lr=2.73e-05  grad=1.23  71.8 sa/s
+[step  23850/50000] loss=0.1270  lr=2.72e-05  grad=1.25  71.5 sa/s
+[step  23900/50000] loss=0.1256  lr=2.71e-05  grad=1.31  71.7 sa/s
+[step  23950/50000] loss=0.1279  lr=2.71e-05  grad=1.09  71.7 sa/s
+[step  24000/50000] loss=0.1263  lr=2.70e-05  grad=1.11  71.8 sa/s
+[eval   24000] val_loss=0.1544  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  24050/50000] loss=0.1337  lr=2.69e-05  grad=1.74  54.6 sa/s
+[step  24100/50000] loss=0.1261  lr=2.68e-05  grad=1.54  71.8 sa/s
+[step  24150/50000] loss=0.1244  lr=2.67e-05  grad=1.10  71.8 sa/s
+[step  24200/50000] loss=0.1287  lr=2.67e-05  grad=1.73  71.8 sa/s
+[step  24250/50000] loss=0.1260  lr=2.66e-05  grad=0.99  71.8 sa/s
+[step  24300/50000] loss=0.1239  lr=2.65e-05  grad=1.31  71.7 sa/s
+[step  24350/50000] loss=0.1243  lr=2.64e-05  grad=0.89  71.9 sa/s
+[step  24400/50000] loss=0.1261  lr=2.63e-05  grad=1.64  71.8 sa/s
+[step  24450/50000] loss=0.1207  lr=2.63e-05  grad=0.94  71.7 sa/s
+[step  24500/50000] loss=0.1233  lr=2.62e-05  grad=1.00  71.3 sa/s
+[step  24550/50000] loss=0.1242  lr=2.61e-05  grad=0.81  71.8 sa/s
+[step  24600/50000] loss=0.1330  lr=2.60e-05  grad=1.23  71.7 sa/s
+[step  24650/50000] loss=0.1199  lr=2.60e-05  grad=1.20  71.7 sa/s
+[step  24700/50000] loss=0.1331  lr=2.59e-05  grad=1.10  71.8 sa/s
+[step  24750/50000] loss=0.1332  lr=2.58e-05  grad=1.34  71.7 sa/s
+[step  24800/50000] loss=0.1276  lr=2.57e-05  grad=1.01  71.7 sa/s
+[step  24850/50000] loss=0.1286  lr=2.56e-05  grad=1.06  71.7 sa/s
+[step  24900/50000] loss=0.1280  lr=2.56e-05  grad=0.81  71.7 sa/s
+[step  24950/50000] loss=0.1267  lr=2.55e-05  grad=1.15  71.8 sa/s
+[step  25000/50000] loss=0.1242  lr=2.54e-05  grad=1.55  71.8 sa/s
+[step  25050/50000] loss=0.1341  lr=2.53e-05  grad=1.00  71.8 sa/s
+[step  25100/50000] loss=0.1241  lr=2.52e-05  grad=1.57  71.9 sa/s
+[step  25150/50000] loss=0.1263  lr=2.52e-05  grad=1.31  71.7 sa/s
+[step  25200/50000] loss=0.1313  lr=2.51e-05  grad=0.88  71.8 sa/s
+[step  25250/50000] loss=0.1267  lr=2.50e-05  grad=0.75  71.8 sa/s
+[step  25300/50000] loss=0.1240  lr=2.49e-05  grad=0.93  71.8 sa/s
+[step  25350/50000] loss=0.1263  lr=2.48e-05  grad=1.08  71.8 sa/s
+[step  25400/50000] loss=0.1205  lr=2.48e-05  grad=1.52  71.8 sa/s
+[step  25450/50000] loss=0.1203  lr=2.47e-05  grad=0.79  71.4 sa/s
+[step  25500/50000] loss=0.1269  lr=2.46e-05  grad=0.87  71.8 sa/s
+[step  25550/50000] loss=0.1285  lr=2.45e-05  grad=0.89  71.8 sa/s
+[step  25600/50000] loss=0.1320  lr=2.44e-05  grad=0.99  71.7 sa/s
+[step  25650/50000] loss=0.1206  lr=2.44e-05  grad=1.08  71.7 sa/s
+[step  25700/50000] loss=0.1283  lr=2.43e-05  grad=1.00  71.7 sa/s
+[step  25750/50000] loss=0.1242  lr=2.42e-05  grad=0.78  71.7 sa/s
+[step  25800/50000] loss=0.1212  lr=2.41e-05  grad=1.44  71.7 sa/s
+[step  25850/50000] loss=0.1231  lr=2.40e-05  grad=1.08  71.8 sa/s
+[step  25900/50000] loss=0.1238  lr=2.40e-05  grad=1.18  71.8 sa/s
+[step  25950/50000] loss=0.1220  lr=2.39e-05  grad=0.98  71.8 sa/s
+[step  26000/50000] loss=0.1262  lr=2.38e-05  grad=1.06  71.8 sa/s
+[eval   26000] val_loss=0.1528  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  26050/50000] loss=0.1259  lr=2.37e-05  grad=0.78  54.7 sa/s
+[step  26100/50000] loss=0.1242  lr=2.37e-05  grad=1.01  71.8 sa/s
+[step  26150/50000] loss=0.1246  lr=2.36e-05  grad=1.09  71.8 sa/s
+[step  26200/50000] loss=0.1265  lr=2.35e-05  grad=1.97  71.7 sa/s
+[step  26250/50000] loss=0.1266  lr=2.34e-05  grad=1.95  71.8 sa/s
+[step  26300/50000] loss=0.1183  lr=2.33e-05  grad=0.89  71.9 sa/s
+[step  26350/50000] loss=0.1222  lr=2.33e-05  grad=1.59  71.9 sa/s
+[step  26400/50000] loss=0.1231  lr=2.32e-05  grad=1.30  71.8 sa/s
+[step  26450/50000] loss=0.1247  lr=2.31e-05  grad=0.86  71.9 sa/s
+[step  26500/50000] loss=0.1272  lr=2.30e-05  grad=1.02  71.9 sa/s
+[step  26550/50000] loss=0.1228  lr=2.29e-05  grad=0.95  71.9 sa/s
+[step  26600/50000] loss=0.1256  lr=2.29e-05  grad=1.10  71.5 sa/s
+[step  26650/50000] loss=0.1253  lr=2.28e-05  grad=1.28  71.9 sa/s
+[step  26700/50000] loss=0.1268  lr=2.27e-05  grad=1.45  71.7 sa/s
+[step  26750/50000] loss=0.1272  lr=2.26e-05  grad=0.97  71.9 sa/s
+[step  26800/50000] loss=0.1240  lr=2.25e-05  grad=1.21  71.9 sa/s
+[step  26850/50000] loss=0.1242  lr=2.25e-05  grad=0.86  71.9 sa/s
+[step  26900/50000] loss=0.1227  lr=2.24e-05  grad=0.98  71.9 sa/s
+[step  26950/50000] loss=0.1225  lr=2.23e-05  grad=0.95  71.9 sa/s
+[step  27000/50000] loss=0.1259  lr=2.22e-05  grad=0.96  71.9 sa/s
+[step  27050/50000] loss=0.1232  lr=2.22e-05  grad=0.90  70.1 sa/s
+[step  27100/50000] loss=0.1192  lr=2.21e-05  grad=1.22  71.9 sa/s
+[step  27150/50000] loss=0.1247  lr=2.20e-05  grad=0.81  71.9 sa/s
+[step  27200/50000] loss=0.1265  lr=2.19e-05  grad=1.09  71.9 sa/s
+[step  27250/50000] loss=0.1223  lr=2.18e-05  grad=1.03  71.8 sa/s
+[step  27300/50000] loss=0.1236  lr=2.18e-05  grad=1.08  71.9 sa/s
+[step  27350/50000] loss=0.1296  lr=2.17e-05  grad=1.23  71.9 sa/s
+[step  27400/50000] loss=0.1220  lr=2.16e-05  grad=1.22  71.8 sa/s
+[step  27450/50000] loss=0.1282  lr=2.15e-05  grad=1.27  71.9 sa/s
+[step  27500/50000] loss=0.1272  lr=2.14e-05  grad=1.25  71.9 sa/s
+[step  27550/50000] loss=0.1203  lr=2.14e-05  grad=1.09  71.8 sa/s
+[step  27600/50000] loss=0.1250  lr=2.13e-05  grad=0.91  71.8 sa/s
+[step  27650/50000] loss=0.1278  lr=2.12e-05  grad=1.04  71.8 sa/s
+[step  27700/50000] loss=0.1228  lr=2.11e-05  grad=1.10  71.7 sa/s
+[step  27750/50000] loss=0.1228  lr=2.11e-05  grad=0.72  71.9 sa/s
+[step  27800/50000] loss=0.1227  lr=2.10e-05  grad=1.35  71.9 sa/s
+[step  27850/50000] loss=0.1258  lr=2.09e-05  grad=0.87  71.9 sa/s
+[step  27900/50000] loss=0.1208  lr=2.08e-05  grad=0.77  71.9 sa/s
+[step  27950/50000] loss=0.1253  lr=2.07e-05  grad=0.97  71.9 sa/s
+[step  28000/50000] loss=0.1243  lr=2.07e-05  grad=0.81  71.9 sa/s
+[eval   28000] val_loss=0.1510  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  28050/50000] loss=0.1239  lr=2.06e-05  grad=0.88  54.6 sa/s
+[step  28100/50000] loss=0.1195  lr=2.05e-05  grad=1.09  71.8 sa/s
+[step  28150/50000] loss=0.1223  lr=2.04e-05  grad=0.89  71.9 sa/s
+[step  28200/50000] loss=0.1192  lr=2.03e-05  grad=0.91  71.8 sa/s
+[step  28250/50000] loss=0.1204  lr=2.03e-05  grad=0.93  71.7 sa/s
+[step  28300/50000] loss=0.1262  lr=2.02e-05  grad=1.26  71.9 sa/s
+[step  28350/50000] loss=0.1275  lr=2.01e-05  grad=1.00  71.9 sa/s
+[step  28400/50000] loss=0.1248  lr=2.00e-05  grad=0.69  71.9 sa/s
+[step  28450/50000] loss=0.1226  lr=2.00e-05  grad=1.00  71.9 sa/s
+[step  28500/50000] loss=0.1251  lr=1.99e-05  grad=1.04  71.9 sa/s
+[step  28550/50000] loss=0.1276  lr=1.98e-05  grad=1.00  71.9 sa/s
+[step  28600/50000] loss=0.1260  lr=1.97e-05  grad=0.88  71.9 sa/s
+[step  28650/50000] loss=0.1227  lr=1.96e-05  grad=0.89  71.9 sa/s
+[step  28700/50000] loss=0.1206  lr=1.96e-05  grad=0.85  71.8 sa/s
+[step  28750/50000] loss=0.1217  lr=1.95e-05  grad=1.04  71.8 sa/s
+[step  28800/50000] loss=0.1243  lr=1.94e-05  grad=0.88  71.9 sa/s
+[step  28850/50000] loss=0.1174  lr=1.93e-05  grad=0.93  71.9 sa/s
+[step  28900/50000] loss=0.1153  lr=1.93e-05  grad=0.97  71.9 sa/s
+[step  28950/50000] loss=0.1190  lr=1.92e-05  grad=0.93  71.9 sa/s
+[step  29000/50000] loss=0.1159  lr=1.91e-05  grad=1.85  71.9 sa/s
+[step  29050/50000] loss=0.1274  lr=1.90e-05  grad=1.35  71.9 sa/s
+[step  29100/50000] loss=0.1193  lr=1.90e-05  grad=1.25  71.8 sa/s
+[step  29150/50000] loss=0.1200  lr=1.89e-05  grad=1.07  71.9 sa/s
+[step  29200/50000] loss=0.1167  lr=1.88e-05  grad=0.99  71.8 sa/s
+[step  29250/50000] loss=0.1154  lr=1.87e-05  grad=0.96  71.8 sa/s
+[step  29300/50000] loss=0.1184  lr=1.86e-05  grad=1.93  71.7 sa/s
+[step  29350/50000] loss=0.1251  lr=1.86e-05  grad=1.51  71.9 sa/s
+[step  29400/50000] loss=0.1233  lr=1.85e-05  grad=1.16  71.6 sa/s
+[step  29450/50000] loss=0.1264  lr=1.84e-05  grad=0.87  71.9 sa/s
+[step  29500/50000] loss=0.1230  lr=1.83e-05  grad=0.91  71.9 sa/s
+[step  29550/50000] loss=0.1222  lr=1.83e-05  grad=0.82  71.8 sa/s
+[step  29600/50000] loss=0.1207  lr=1.82e-05  grad=0.85  71.8 sa/s
+[step  29650/50000] loss=0.1165  lr=1.81e-05  grad=0.91  71.8 sa/s
+[step  29700/50000] loss=0.1114  lr=1.80e-05  grad=0.70  71.9 sa/s
+[step  29750/50000] loss=0.1159  lr=1.80e-05  grad=1.22  71.9 sa/s
+[step  29800/50000] loss=0.1231  lr=1.79e-05  grad=0.74  71.8 sa/s
+[step  29850/50000] loss=0.1256  lr=1.78e-05  grad=0.94  71.7 sa/s
+[step  29900/50000] loss=0.1204  lr=1.77e-05  grad=1.31  71.7 sa/s
+[step  29950/50000] loss=0.1226  lr=1.77e-05  grad=1.32  71.8 sa/s
+[step  30000/50000] loss=0.1267  lr=1.76e-05  grad=1.05  71.8 sa/s
+[eval   30000] val_loss=0.1374  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  30050/50000] loss=0.1147  lr=1.75e-05  grad=1.03  54.8 sa/s
+[step  30100/50000] loss=0.1281  lr=1.74e-05  grad=0.76  71.9 sa/s
+[step  30150/50000] loss=0.1179  lr=1.74e-05  grad=0.85  71.9 sa/s
+[step  30200/50000] loss=0.1214  lr=1.73e-05  grad=1.07  71.9 sa/s
+[step  30250/50000] loss=0.1252  lr=1.72e-05  grad=0.85  71.8 sa/s
+[step  30300/50000] loss=0.1215  lr=1.71e-05  grad=0.79  71.9 sa/s
+[step  30350/50000] loss=0.1190  lr=1.71e-05  grad=1.22  71.9 sa/s
+[step  30400/50000] loss=0.1152  lr=1.70e-05  grad=1.54  71.9 sa/s
+[step  30450/50000] loss=0.1218  lr=1.69e-05  grad=0.92  71.9 sa/s
+[step  30500/50000] loss=0.1205  lr=1.68e-05  grad=0.89  71.9 sa/s
+[step  30550/50000] loss=0.1198  lr=1.67e-05  grad=0.95  71.9 sa/s
+[step  30600/50000] loss=0.1241  lr=1.67e-05  grad=0.96  71.9 sa/s
+[step  30650/50000] loss=0.1224  lr=1.66e-05  grad=1.21  71.9 sa/s
+[step  30700/50000] loss=0.1182  lr=1.65e-05  grad=1.17  71.9 sa/s
+[step  30750/50000] loss=0.1174  lr=1.65e-05  grad=1.43  71.9 sa/s
+[step  30800/50000] loss=0.1237  lr=1.64e-05  grad=0.95  71.5 sa/s
+[step  30850/50000] loss=0.1195  lr=1.63e-05  grad=0.74  71.9 sa/s
+[step  30900/50000] loss=0.1201  lr=1.62e-05  grad=1.27  71.8 sa/s
+[step  30950/50000] loss=0.1208  lr=1.62e-05  grad=1.12  71.7 sa/s
+[step  31000/50000] loss=0.1192  lr=1.61e-05  grad=0.77  71.8 sa/s
+[step  31050/50000] loss=0.1240  lr=1.60e-05  grad=1.50  71.8 sa/s
+[step  31100/50000] loss=0.1176  lr=1.59e-05  grad=0.85  71.8 sa/s
+[step  31150/50000] loss=0.1210  lr=1.59e-05  grad=1.03  71.4 sa/s
+[step  31200/50000] loss=0.1194  lr=1.58e-05  grad=0.95  71.5 sa/s
+[step  31250/50000] loss=0.1195  lr=1.57e-05  grad=0.84  71.6 sa/s
+[step  31300/50000] loss=0.1231  lr=1.56e-05  grad=2.06  71.7 sa/s
+[step  31350/50000] loss=0.1244  lr=1.56e-05  grad=1.01  71.8 sa/s
+[step  31400/50000] loss=0.1144  lr=1.55e-05  grad=0.92  71.8 sa/s
+[step  31450/50000] loss=0.1147  lr=1.54e-05  grad=1.06  71.8 sa/s
+[step  31500/50000] loss=0.1239  lr=1.53e-05  grad=0.88  71.9 sa/s
+[step  31550/50000] loss=0.1151  lr=1.53e-05  grad=1.05  71.9 sa/s
+[step  31600/50000] loss=0.1176  lr=1.52e-05  grad=0.83  71.9 sa/s
+[step  31650/50000] loss=0.1148  lr=1.51e-05  grad=0.90  71.9 sa/s
+[step  31700/50000] loss=0.1185  lr=1.51e-05  grad=1.05  71.9 sa/s
+[step  31750/50000] loss=0.1216  lr=1.50e-05  grad=0.66  71.9 sa/s
+[step  31800/50000] loss=0.1231  lr=1.49e-05  grad=0.96  71.9 sa/s
+[step  31850/50000] loss=0.1147  lr=1.48e-05  grad=0.92  71.9 sa/s
+[step  31900/50000] loss=0.1188  lr=1.48e-05  grad=1.69  71.9 sa/s
+[step  31950/50000] loss=0.1228  lr=1.47e-05  grad=0.81  71.9 sa/s
+[step  32000/50000] loss=0.1201  lr=1.46e-05  grad=1.20  71.9 sa/s
+[eval   32000] val_loss=0.1419  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  32050/50000] loss=0.1178  lr=1.45e-05  grad=1.05  54.6 sa/s
+[step  32100/50000] loss=0.1165  lr=1.45e-05  grad=0.78  71.9 sa/s
+[step  32150/50000] loss=0.1197  lr=1.44e-05  grad=1.00  71.9 sa/s
+[step  32200/50000] loss=0.1196  lr=1.43e-05  grad=1.63  71.8 sa/s
+[step  32250/50000] loss=0.1165  lr=1.43e-05  grad=0.80  71.8 sa/s
+[step  32300/50000] loss=0.1223  lr=1.42e-05  grad=1.27  71.9 sa/s
+[step  32350/50000] loss=0.1188  lr=1.41e-05  grad=1.16  71.9 sa/s
+[step  32400/50000] loss=0.1161  lr=1.40e-05  grad=1.33  71.9 sa/s
+[step  32450/50000] loss=0.1183  lr=1.40e-05  grad=1.15  71.9 sa/s
+[step  32500/50000] loss=0.1139  lr=1.39e-05  grad=0.79  71.9 sa/s
+[step  32550/50000] loss=0.1175  lr=1.38e-05  grad=1.20  71.8 sa/s
+[step  32600/50000] loss=0.1201  lr=1.38e-05  grad=0.85  71.9 sa/s
+[step  32650/50000] loss=0.1142  lr=1.37e-05  grad=1.54  71.9 sa/s
+[step  32700/50000] loss=0.1163  lr=1.36e-05  grad=1.10  72.0 sa/s
+[step  32750/50000] loss=0.1143  lr=1.35e-05  grad=0.81  72.0 sa/s
+[step  32800/50000] loss=0.1133  lr=1.35e-05  grad=0.59  72.0 sa/s
+[step  32850/50000] loss=0.1193  lr=1.34e-05  grad=0.85  72.0 sa/s
+[step  32900/50000] loss=0.1171  lr=1.33e-05  grad=0.86  72.0 sa/s
+[step  32950/50000] loss=0.1230  lr=1.33e-05  grad=1.13  72.0 sa/s
+[step  33000/50000] loss=0.1169  lr=1.32e-05  grad=0.95  72.0 sa/s
+[step  33050/50000] loss=0.1136  lr=1.31e-05  grad=1.98  72.0 sa/s
+[step  33100/50000] loss=0.1234  lr=1.31e-05  grad=1.22  71.8 sa/s
+[step  33150/50000] loss=0.1188  lr=1.30e-05  grad=1.14  72.0 sa/s
+[step  33200/50000] loss=0.1246  lr=1.29e-05  grad=1.08  71.9 sa/s
+[step  33250/50000] loss=0.1219  lr=1.28e-05  grad=0.87  71.9 sa/s
+[step  33300/50000] loss=0.1197  lr=1.28e-05  grad=1.10  71.9 sa/s
+[step  33350/50000] loss=0.1191  lr=1.27e-05  grad=0.59  71.9 sa/s
+[step  33400/50000] loss=0.1133  lr=1.26e-05  grad=0.87  71.9 sa/s
+[step  33450/50000] loss=0.1118  lr=1.26e-05  grad=0.96  71.9 sa/s
+[step  33500/50000] loss=0.1224  lr=1.25e-05  grad=0.78  71.9 sa/s
+[step  33550/50000] loss=0.1127  lr=1.24e-05  grad=0.87  71.9 sa/s
+[step  33600/50000] loss=0.1156  lr=1.24e-05  grad=1.41  71.8 sa/s
+[step  33650/50000] loss=0.1179  lr=1.23e-05  grad=0.72  71.9 sa/s
+[step  33700/50000] loss=0.1167  lr=1.22e-05  grad=1.17  72.0 sa/s
+[step  33750/50000] loss=0.1173  lr=1.22e-05  grad=1.07  72.0 sa/s
+[step  33800/50000] loss=0.1293  lr=1.21e-05  grad=0.85  71.9 sa/s
+[step  33850/50000] loss=0.1122  lr=1.20e-05  grad=1.00  72.0 sa/s
+[step  33900/50000] loss=0.1184  lr=1.20e-05  grad=1.29  72.0 sa/s
+[step  33950/50000] loss=0.1177  lr=1.19e-05  grad=1.07  72.0 sa/s
+[step  34000/50000] loss=0.1222  lr=1.18e-05  grad=0.87  72.0 sa/s
+[eval   34000] val_loss=0.1336  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  34050/50000] loss=0.1191  lr=1.18e-05  grad=0.82  54.8 sa/s
+[step  34100/50000] loss=0.1168  lr=1.17e-05  grad=0.83  71.9 sa/s
+[step  34150/50000] loss=0.1217  lr=1.16e-05  grad=1.00  71.9 sa/s
+[step  34200/50000] loss=0.1156  lr=1.16e-05  grad=1.06  71.9 sa/s
+[step  34250/50000] loss=0.1228  lr=1.15e-05  grad=1.83  71.9 sa/s
+[step  34300/50000] loss=0.1152  lr=1.14e-05  grad=0.91  71.9 sa/s
+[step  34350/50000] loss=0.1140  lr=1.14e-05  grad=1.27  71.9 sa/s
+[step  34400/50000] loss=0.1206  lr=1.13e-05  grad=1.18  71.9 sa/s
+[step  34450/50000] loss=0.1208  lr=1.12e-05  grad=1.00  71.9 sa/s
+[step  34500/50000] loss=0.1157  lr=1.12e-05  grad=1.33  71.9 sa/s
+[step  34550/50000] loss=0.1141  lr=1.11e-05  grad=1.13  71.9 sa/s
+[step  34600/50000] loss=0.1166  lr=1.10e-05  grad=1.17  71.7 sa/s
+[step  34650/50000] loss=0.1112  lr=1.10e-05  grad=0.76  71.6 sa/s
+[step  34700/50000] loss=0.1178  lr=1.09e-05  grad=0.81  71.6 sa/s
+[step  34750/50000] loss=0.1101  lr=1.08e-05  grad=0.96  71.8 sa/s
+[step  34800/50000] loss=0.1203  lr=1.08e-05  grad=1.29  71.9 sa/s
+[step  34850/50000] loss=0.1124  lr=1.07e-05  grad=1.07  71.9 sa/s
+[step  34900/50000] loss=0.1121  lr=1.06e-05  grad=0.95  71.8 sa/s
+[step  34950/50000] loss=0.1162  lr=1.06e-05  grad=1.14  71.9 sa/s
+[step  35000/50000] loss=0.1181  lr=1.05e-05  grad=1.02  71.9 sa/s
+[step  35050/50000] loss=0.1119  lr=1.04e-05  grad=0.91  71.9 sa/s
+[step  35100/50000] loss=0.1211  lr=1.04e-05  grad=1.34  71.9 sa/s
+[step  35150/50000] loss=0.1204  lr=1.03e-05  grad=1.10  71.9 sa/s
+[step  35200/50000] loss=0.1229  lr=1.02e-05  grad=1.06  71.9 sa/s
+[step  35250/50000] loss=0.1127  lr=1.02e-05  grad=1.81  71.9 sa/s
+[step  35300/50000] loss=0.1213  lr=1.01e-05  grad=0.85  71.9 sa/s
+[step  35350/50000] loss=0.1090  lr=1.01e-05  grad=1.00  71.9 sa/s
+[step  35400/50000] loss=0.1216  lr=9.99e-06  grad=0.96  71.9 sa/s
+[step  35450/50000] loss=0.1183  lr=9.92e-06  grad=1.26  71.7 sa/s
+[step  35500/50000] loss=0.1264  lr=9.86e-06  grad=0.94  71.5 sa/s
+[step  35550/50000] loss=0.1138  lr=9.80e-06  grad=1.32  71.6 sa/s
+[step  35600/50000] loss=0.1216  lr=9.74e-06  grad=1.07  71.7 sa/s
+[step  35650/50000] loss=0.1165  lr=9.67e-06  grad=0.99  71.8 sa/s
+[step  35700/50000] loss=0.1175  lr=9.61e-06  grad=0.84  71.8 sa/s
+[step  35750/50000] loss=0.1117  lr=9.55e-06  grad=1.23  71.8 sa/s
+[step  35800/50000] loss=0.1201  lr=9.48e-06  grad=1.30  71.8 sa/s
+[step  35850/50000] loss=0.1136  lr=9.42e-06  grad=0.82  71.8 sa/s
+[step  35900/50000] loss=0.1232  lr=9.36e-06  grad=0.77  71.8 sa/s
+[step  35950/50000] loss=0.1160  lr=9.30e-06  grad=0.65  71.7 sa/s
+[step  36000/50000] loss=0.1149  lr=9.24e-06  grad=1.20  71.8 sa/s
+[eval   36000] val_loss=0.1415  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  36050/50000] loss=0.1198  lr=9.18e-06  grad=0.96  54.5 sa/s
+[step  36100/50000] loss=0.1081  lr=9.11e-06  grad=0.88  70.1 sa/s
+[step  36150/50000] loss=0.1165  lr=9.05e-06  grad=0.93  71.9 sa/s
+[step  36200/50000] loss=0.1167  lr=8.99e-06  grad=1.04  71.8 sa/s
+[step  36250/50000] loss=0.1178  lr=8.93e-06  grad=1.03  71.8 sa/s
+[step  36300/50000] loss=0.1201  lr=8.87e-06  grad=0.92  71.5 sa/s
+[step  36350/50000] loss=0.1171  lr=8.81e-06  grad=1.52  72.0 sa/s
+[step  36400/50000] loss=0.1186  lr=8.75e-06  grad=1.08  72.0 sa/s
+[step  36450/50000] loss=0.1162  lr=8.69e-06  grad=0.79  72.0 sa/s
+[step  36500/50000] loss=0.1194  lr=8.63e-06  grad=1.16  71.9 sa/s
+[step  36550/50000] loss=0.1135  lr=8.57e-06  grad=1.05  72.0 sa/s
+[step  36600/50000] loss=0.1191  lr=8.51e-06  grad=0.77  72.0 sa/s
+[step  36650/50000] loss=0.1121  lr=8.45e-06  grad=2.21  72.0 sa/s
+[step  36700/50000] loss=0.1105  lr=8.39e-06  grad=1.25  72.0 sa/s
+[step  36750/50000] loss=0.1208  lr=8.33e-06  grad=0.92  72.0 sa/s
+[step  36800/50000] loss=0.1196  lr=8.27e-06  grad=1.45  71.9 sa/s
+[step  36850/50000] loss=0.1145  lr=8.21e-06  grad=1.22  71.9 sa/s
+[step  36900/50000] loss=0.1076  lr=8.16e-06  grad=0.87  72.0 sa/s
+[step  36950/50000] loss=0.1117  lr=8.10e-06  grad=1.34  71.9 sa/s
+[step  37000/50000] loss=0.1139  lr=8.04e-06  grad=1.32  71.9 sa/s
+[step  37050/50000] loss=0.1164  lr=7.98e-06  grad=1.01  72.0 sa/s
+[step  37100/50000] loss=0.1147  lr=7.92e-06  grad=1.38  71.9 sa/s
+[step  37150/50000] loss=0.1194  lr=7.86e-06  grad=0.71  71.9 sa/s
+[step  37200/50000] loss=0.1171  lr=7.81e-06  grad=0.77  71.9 sa/s
+[step  37250/50000] loss=0.1133  lr=7.75e-06  grad=1.06  71.9 sa/s
+[step  37300/50000] loss=0.1115  lr=7.69e-06  grad=1.29  72.0 sa/s
+[step  37350/50000] loss=0.1141  lr=7.63e-06  grad=0.97  72.0 sa/s
+[step  37400/50000] loss=0.1145  lr=7.58e-06  grad=0.71  71.9 sa/s
+[step  37450/50000] loss=0.1224  lr=7.52e-06  grad=0.95  71.9 sa/s
+[step  37500/50000] loss=0.1134  lr=7.46e-06  grad=0.78  72.0 sa/s
+[step  37550/50000] loss=0.1200  lr=7.41e-06  grad=0.77  71.9 sa/s
+[step  37600/50000] loss=0.1155  lr=7.35e-06  grad=0.56  71.9 sa/s
+[step  37650/50000] loss=0.1147  lr=7.30e-06  grad=1.35  72.0 sa/s
+[step  37700/50000] loss=0.1161  lr=7.24e-06  grad=0.80  71.9 sa/s
+[step  37750/50000] loss=0.1154  lr=7.18e-06  grad=0.69  71.9 sa/s
+[step  37800/50000] loss=0.1128  lr=7.13e-06  grad=1.10  72.0 sa/s
+[step  37850/50000] loss=0.1112  lr=7.07e-06  grad=0.87  71.9 sa/s
+[step  37900/50000] loss=0.1122  lr=7.02e-06  grad=1.20  71.9 sa/s
+[step  37950/50000] loss=0.1117  lr=6.96e-06  grad=0.89  72.0 sa/s
+[step  38000/50000] loss=0.1146  lr=6.91e-06  grad=1.77  71.9 sa/s
+[eval   38000] val_loss=0.1507  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  38050/50000] loss=0.1165  lr=6.85e-06  grad=1.06  54.7 sa/s
+[step  38100/50000] loss=0.1178  lr=6.80e-06  grad=1.37  71.9 sa/s
+[step  38150/50000] loss=0.1185  lr=6.74e-06  grad=0.60  71.9 sa/s
+[step  38200/50000] loss=0.1148  lr=6.69e-06  grad=1.23  71.9 sa/s
+[step  38250/50000] loss=0.1158  lr=6.64e-06  grad=0.76  71.9 sa/s
+[step  38300/50000] loss=0.1212  lr=6.58e-06  grad=0.89  71.9 sa/s
+[step  38350/50000] loss=0.1124  lr=6.53e-06  grad=1.03  71.9 sa/s
+[step  38400/50000] loss=0.1163  lr=6.48e-06  grad=0.95  71.9 sa/s
+[step  38450/50000] loss=0.1165  lr=6.42e-06  grad=1.30  71.9 sa/s
+[step  38500/50000] loss=0.1077  lr=6.37e-06  grad=0.94  71.9 sa/s
+[step  38550/50000] loss=0.1164  lr=6.32e-06  grad=0.86  71.9 sa/s
+[step  38600/50000] loss=0.1128  lr=6.26e-06  grad=0.97  71.9 sa/s
+[step  38650/50000] loss=0.1146  lr=6.21e-06  grad=1.04  71.9 sa/s
+[step  38700/50000] loss=0.1203  lr=6.16e-06  grad=0.94  71.9 sa/s
+[step  38750/50000] loss=0.1091  lr=6.11e-06  grad=0.74  71.9 sa/s
+[step  38800/50000] loss=0.1187  lr=6.06e-06  grad=2.20  71.9 sa/s
+[step  38850/50000] loss=0.1192  lr=6.00e-06  grad=1.05  71.8 sa/s
+[step  38900/50000] loss=0.1102  lr=5.95e-06  grad=0.79  71.9 sa/s
+[step  38950/50000] loss=0.1093  lr=5.90e-06  grad=1.20  71.8 sa/s
+[step  39000/50000] loss=0.1131  lr=5.85e-06  grad=0.67  71.8 sa/s
+[step  39050/50000] loss=0.1051  lr=5.80e-06  grad=0.69  71.9 sa/s
+[step  39100/50000] loss=0.1102  lr=5.75e-06  grad=0.88  71.9 sa/s
+[step  39150/50000] loss=0.1128  lr=5.70e-06  grad=0.79  71.8 sa/s
+[step  39200/50000] loss=0.1159  lr=5.65e-06  grad=1.26  71.9 sa/s
+[step  39250/50000] loss=0.1141  lr=5.60e-06  grad=1.01  71.9 sa/s
+[step  39300/50000] loss=0.1206  lr=5.55e-06  grad=1.10  71.9 sa/s
+[step  39350/50000] loss=0.1072  lr=5.50e-06  grad=1.27  71.9 sa/s
+[step  39400/50000] loss=0.1122  lr=5.45e-06  grad=0.92  71.8 sa/s
+[step  39450/50000] loss=0.1167  lr=5.40e-06  grad=1.18  71.9 sa/s
+[step  39500/50000] loss=0.1145  lr=5.35e-06  grad=0.92  71.9 sa/s
+[step  39550/50000] loss=0.1114  lr=5.30e-06  grad=0.80  71.9 sa/s
+[step  39600/50000] loss=0.1161  lr=5.25e-06  grad=1.01  71.9 sa/s
+[step  39650/50000] loss=0.1088  lr=5.20e-06  grad=1.29  71.9 sa/s
+[step  39700/50000] loss=0.1138  lr=5.16e-06  grad=0.90  71.8 sa/s
+[step  39750/50000] loss=0.1096  lr=5.11e-06  grad=0.84  71.9 sa/s
+[step  39800/50000] loss=0.1172  lr=5.06e-06  grad=1.35  71.9 sa/s
+[step  39850/50000] loss=0.1072  lr=5.01e-06  grad=0.71  71.9 sa/s
+[step  39900/50000] loss=0.1114  lr=4.96e-06  grad=1.09  71.9 sa/s
+[step  39950/50000] loss=0.1149  lr=4.92e-06  grad=0.92  71.9 sa/s
+[step  40000/50000] loss=0.1162  lr=4.87e-06  grad=0.85  71.8 sa/s
+[eval   40000] val_loss=0.1393  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  40050/50000] loss=0.1152  lr=4.82e-06  grad=1.34  54.5 sa/s
+[step  40100/50000] loss=0.1151  lr=4.78e-06  grad=0.93  71.9 sa/s
+[step  40150/50000] loss=0.1166  lr=4.73e-06  grad=1.04  71.9 sa/s
+[step  40200/50000] loss=0.1113  lr=4.68e-06  grad=1.36  71.7 sa/s
+[step  40250/50000] loss=0.1092  lr=4.64e-06  grad=0.85  71.7 sa/s
+[step  40300/50000] loss=0.1151  lr=4.59e-06  grad=1.66  71.9 sa/s
+[step  40350/50000] loss=0.1148  lr=4.54e-06  grad=0.72  71.9 sa/s
+[step  40400/50000] loss=0.1167  lr=4.50e-06  grad=0.91  71.9 sa/s
+[step  40450/50000] loss=0.1116  lr=4.45e-06  grad=0.90  71.9 sa/s
+[step  40500/50000] loss=0.1160  lr=4.41e-06  grad=0.99  71.8 sa/s
+[step  40550/50000] loss=0.1180  lr=4.36e-06  grad=0.77  71.8 sa/s
+[step  40600/50000] loss=0.1192  lr=4.32e-06  grad=1.01  71.9 sa/s
+[step  40650/50000] loss=0.1107  lr=4.27e-06  grad=0.74  71.9 sa/s
+[step  40700/50000] loss=0.1094  lr=4.23e-06  grad=0.82  71.9 sa/s
+[step  40750/50000] loss=0.1132  lr=4.19e-06  grad=0.70  71.9 sa/s
+[step  40800/50000] loss=0.1152  lr=4.14e-06  grad=0.99  71.9 sa/s
+[step  40850/50000] loss=0.1140  lr=4.10e-06  grad=0.73  71.8 sa/s
+[step  40900/50000] loss=0.1149  lr=4.06e-06  grad=0.88  71.9 sa/s
+[step  40950/50000] loss=0.1138  lr=4.01e-06  grad=1.07  71.9 sa/s
+[step  41000/50000] loss=0.1177  lr=3.97e-06  grad=0.89  71.9 sa/s
+[step  41050/50000] loss=0.1102  lr=3.93e-06  grad=0.88  71.9 sa/s
+[step  41100/50000] loss=0.1182  lr=3.88e-06  grad=0.89  71.8 sa/s
+[step  41150/50000] loss=0.1168  lr=3.84e-06  grad=0.71  71.8 sa/s
+[step  41200/50000] loss=0.1139  lr=3.80e-06  grad=0.75  71.9 sa/s
+[step  41250/50000] loss=0.1103  lr=3.76e-06  grad=0.80  71.9 sa/s
+[step  41300/50000] loss=0.1160  lr=3.72e-06  grad=0.80  71.9 sa/s
+[step  41350/50000] loss=0.1104  lr=3.67e-06  grad=0.74  71.8 sa/s
+[step  41400/50000] loss=0.1051  lr=3.63e-06  grad=0.78  71.8 sa/s
+[step  41450/50000] loss=0.1167  lr=3.59e-06  grad=0.93  71.8 sa/s
+[step  41500/50000] loss=0.1198  lr=3.55e-06  grad=1.06  71.8 sa/s
+[step  41550/50000] loss=0.1138  lr=3.51e-06  grad=0.86  71.8 sa/s
+[step  41600/50000] loss=0.1136  lr=3.47e-06  grad=1.12  71.8 sa/s
+[step  41650/50000] loss=0.1147  lr=3.43e-06  grad=1.24  71.9 sa/s
+[step  41700/50000] loss=0.1089  lr=3.39e-06  grad=0.73  71.8 sa/s
+[step  41750/50000] loss=0.1118  lr=3.35e-06  grad=1.27  71.9 sa/s
+[step  41800/50000] loss=0.1152  lr=3.31e-06  grad=0.80  71.8 sa/s
+[step  41850/50000] loss=0.1161  lr=3.27e-06  grad=1.00  71.9 sa/s
+[step  41900/50000] loss=0.1119  lr=3.23e-06  grad=0.76  71.4 sa/s
+[step  41950/50000] loss=0.1110  lr=3.19e-06  grad=1.03  71.8 sa/s
+[step  42000/50000] loss=0.1108  lr=3.15e-06  grad=0.73  71.8 sa/s
+[eval   42000] val_loss=0.1309  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  42050/50000] loss=0.1143  lr=3.12e-06  grad=1.01  54.7 sa/s
+[step  42100/50000] loss=0.1127  lr=3.08e-06  grad=0.74  71.8 sa/s
+[step  42150/50000] loss=0.1097  lr=3.04e-06  grad=1.10  71.9 sa/s
+[step  42200/50000] loss=0.1146  lr=3.00e-06  grad=1.41  72.0 sa/s
+[step  42250/50000] loss=0.1060  lr=2.96e-06  grad=1.03  71.9 sa/s
+[step  42300/50000] loss=0.1118  lr=2.93e-06  grad=0.73  71.9 sa/s
+[step  42350/50000] loss=0.1040  lr=2.89e-06  grad=0.71  72.0 sa/s
+[step  42400/50000] loss=0.1153  lr=2.85e-06  grad=1.01  71.9 sa/s
+[step  42450/50000] loss=0.1130  lr=2.82e-06  grad=0.60  71.8 sa/s
+[step  42500/50000] loss=0.1084  lr=2.78e-06  grad=0.94  71.9 sa/s
+[step  42550/50000] loss=0.1155  lr=2.74e-06  grad=1.03  71.9 sa/s
+[step  42600/50000] loss=0.1054  lr=2.71e-06  grad=0.85  71.9 sa/s
+[step  42650/50000] loss=0.1076  lr=2.67e-06  grad=0.77  72.0 sa/s
+[step  42700/50000] loss=0.1029  lr=2.64e-06  grad=0.73  71.9 sa/s
+[step  42750/50000] loss=0.1155  lr=2.60e-06  grad=1.37  71.9 sa/s
+[step  42800/50000] loss=0.1198  lr=2.57e-06  grad=0.93  71.9 sa/s
+[step  42850/50000] loss=0.1107  lr=2.53e-06  grad=1.04  71.9 sa/s
+[step  42900/50000] loss=0.1131  lr=2.50e-06  grad=0.85  71.9 sa/s
+[step  42950/50000] loss=0.1127  lr=2.46e-06  grad=1.14  71.8 sa/s
+[step  43000/50000] loss=0.1122  lr=2.43e-06  grad=0.79  71.9 sa/s
+[step  43050/50000] loss=0.1094  lr=2.39e-06  grad=0.71  71.9 sa/s
+[step  43100/50000] loss=0.1145  lr=2.36e-06  grad=0.79  71.9 sa/s
+[step  43150/50000] loss=0.1114  lr=2.33e-06  grad=0.74  71.9 sa/s
+[step  43200/50000] loss=0.1175  lr=2.29e-06  grad=1.29  71.9 sa/s
+[step  43250/50000] loss=0.1061  lr=2.26e-06  grad=0.70  71.8 sa/s
+[step  43300/50000] loss=0.1076  lr=2.23e-06  grad=1.86  71.9 sa/s
+[step  43350/50000] loss=0.1168  lr=2.19e-06  grad=1.20  71.9 sa/s
+[step  43400/50000] loss=0.1070  lr=2.16e-06  grad=0.89  71.9 sa/s
+[step  43450/50000] loss=0.1067  lr=2.13e-06  grad=1.33  71.9 sa/s
+[step  43500/50000] loss=0.1155  lr=2.10e-06  grad=1.06  71.9 sa/s
+[step  43550/50000] loss=0.1114  lr=2.07e-06  grad=0.79  71.9 sa/s
+[step  43600/50000] loss=0.1115  lr=2.03e-06  grad=0.83  71.9 sa/s
+[step  43650/50000] loss=0.1108  lr=2.00e-06  grad=0.88  71.9 sa/s
+[step  43700/50000] loss=0.1129  lr=1.97e-06  grad=0.79  71.9 sa/s
+[step  43750/50000] loss=0.1140  lr=1.94e-06  grad=1.22  71.9 sa/s
+[step  43800/50000] loss=0.1102  lr=1.91e-06  grad=1.22  71.8 sa/s
+[step  43850/50000] loss=0.1107  lr=1.88e-06  grad=0.92  71.9 sa/s
+[step  43900/50000] loss=0.1116  lr=1.85e-06  grad=2.03  71.9 sa/s
+[step  43950/50000] loss=0.1109  lr=1.82e-06  grad=1.30  71.9 sa/s
+[step  44000/50000] loss=0.1173  lr=1.79e-06  grad=0.70  71.9 sa/s
+[eval   44000] val_loss=0.1294  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  44050/50000] loss=0.1186  lr=1.76e-06  grad=0.80  54.7 sa/s
+[step  44100/50000] loss=0.1130  lr=1.73e-06  grad=0.65  71.9 sa/s
+[step  44150/50000] loss=0.1169  lr=1.70e-06  grad=0.99  71.9 sa/s
+[step  44200/50000] loss=0.1070  lr=1.68e-06  grad=0.90  72.0 sa/s
+[step  44250/50000] loss=0.1094  lr=1.65e-06  grad=1.00  71.6 sa/s
+[step  44300/50000] loss=0.1149  lr=1.62e-06  grad=0.89  71.9 sa/s
+[step  44350/50000] loss=0.1139  lr=1.59e-06  grad=0.87  71.8 sa/s
+[step  44400/50000] loss=0.1115  lr=1.56e-06  grad=0.99  71.9 sa/s
+[step  44450/50000] loss=0.1123  lr=1.54e-06  grad=0.89  71.6 sa/s
+[step  44500/50000] loss=0.1140  lr=1.51e-06  grad=1.15  71.9 sa/s
+[step  44550/50000] loss=0.1134  lr=1.48e-06  grad=0.79  71.8 sa/s
+[step  44600/50000] loss=0.1103  lr=1.45e-06  grad=0.89  71.8 sa/s
+[step  44650/50000] loss=0.1094  lr=1.43e-06  grad=0.59  72.0 sa/s
+[step  44700/50000] loss=0.1096  lr=1.40e-06  grad=1.27  71.9 sa/s
+[step  44750/50000] loss=0.1108  lr=1.38e-06  grad=0.90  72.0 sa/s
+[step  44800/50000] loss=0.1160  lr=1.35e-06  grad=1.04  72.1 sa/s
+[step  44850/50000] loss=0.1102  lr=1.32e-06  grad=1.34  71.9 sa/s
+[step  44900/50000] loss=0.1111  lr=1.30e-06  grad=0.78  71.8 sa/s
+[step  44950/50000] loss=0.1120  lr=1.27e-06  grad=1.15  71.9 sa/s
+[step  45000/50000] loss=0.1172  lr=1.25e-06  grad=0.93  71.9 sa/s
+[step  45050/50000] loss=0.1094  lr=1.22e-06  grad=0.93  71.9 sa/s
+[step  45100/50000] loss=0.1144  lr=1.20e-06  grad=1.44  70.2 sa/s
+[step  45150/50000] loss=0.1151  lr=1.18e-06  grad=1.01  71.9 sa/s
+[step  45200/50000] loss=0.1077  lr=1.15e-06  grad=1.15  71.9 sa/s
+[step  45250/50000] loss=0.1083  lr=1.13e-06  grad=0.92  71.9 sa/s
+[step  45300/50000] loss=0.1139  lr=1.10e-06  grad=1.19  71.9 sa/s
+[step  45350/50000] loss=0.1134  lr=1.08e-06  grad=0.81  72.0 sa/s
+[step  45400/50000] loss=0.1089  lr=1.06e-06  grad=0.72  71.9 sa/s
+[step  45450/50000] loss=0.1159  lr=1.04e-06  grad=1.06  71.9 sa/s
+[step  45500/50000] loss=0.1135  lr=1.01e-06  grad=0.71  72.0 sa/s
+[step  45550/50000] loss=0.1114  lr=9.91e-07  grad=1.04  71.9 sa/s
+[step  45600/50000] loss=0.1176  lr=9.69e-07  grad=0.88  71.9 sa/s
+[step  45650/50000] loss=0.1115  lr=9.47e-07  grad=1.40  71.9 sa/s
+[step  45700/50000] loss=0.1145  lr=9.26e-07  grad=0.71  71.9 sa/s
+[step  45750/50000] loss=0.1158  lr=9.04e-07  grad=0.77  72.0 sa/s
+[step  45800/50000] loss=0.1066  lr=8.83e-07  grad=1.06  72.0 sa/s
+[step  45850/50000] loss=0.1126  lr=8.63e-07  grad=0.72  72.0 sa/s
+[step  45900/50000] loss=0.1091  lr=8.42e-07  grad=0.62  72.0 sa/s
+[step  45950/50000] loss=0.1113  lr=8.22e-07  grad=1.40  72.0 sa/s
+[step  46000/50000] loss=0.1103  lr=8.02e-07  grad=0.75  71.9 sa/s
+[eval   46000] val_loss=0.1458  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  46050/50000] loss=0.1130  lr=7.82e-07  grad=1.30  54.8 sa/s
+[step  46100/50000] loss=0.1186  lr=7.62e-07  grad=0.99  72.0 sa/s
+[step  46150/50000] loss=0.1077  lr=7.43e-07  grad=0.68  72.0 sa/s
+[step  46200/50000] loss=0.1075  lr=7.24e-07  grad=0.97  72.0 sa/s
+[step  46250/50000] loss=0.1063  lr=7.05e-07  grad=1.03  72.0 sa/s
+[step  46300/50000] loss=0.1068  lr=6.86e-07  grad=0.92  72.0 sa/s
+[step  46350/50000] loss=0.1123  lr=6.68e-07  grad=0.81  71.9 sa/s
+[step  46400/50000] loss=0.1116  lr=6.50e-07  grad=1.21  71.9 sa/s
+[step  46450/50000] loss=0.1139  lr=6.32e-07  grad=0.84  71.9 sa/s
+[step  46500/50000] loss=0.1085  lr=6.15e-07  grad=0.74  71.9 sa/s
+[step  46550/50000] loss=0.1125  lr=5.97e-07  grad=0.87  71.9 sa/s
+[step  46600/50000] loss=0.1136  lr=5.80e-07  grad=1.10  71.9 sa/s
+[step  46650/50000] loss=0.1131  lr=5.63e-07  grad=0.86  71.9 sa/s
+[step  46700/50000] loss=0.1072  lr=5.47e-07  grad=0.83  71.9 sa/s
+[step  46750/50000] loss=0.1096  lr=5.30e-07  grad=0.96  71.9 sa/s
+[step  46800/50000] loss=0.1052  lr=5.14e-07  grad=0.80  71.9 sa/s
+[step  46850/50000] loss=0.1146  lr=4.98e-07  grad=1.26  71.9 sa/s
+[step  46900/50000] loss=0.1144  lr=4.83e-07  grad=1.00  72.0 sa/s
+[step  46950/50000] loss=0.1096  lr=4.67e-07  grad=1.47  71.9 sa/s
+[step  47000/50000] loss=0.1131  lr=4.52e-07  grad=0.88  72.0 sa/s
+[step  47050/50000] loss=0.1094  lr=4.37e-07  grad=1.19  72.0 sa/s
+[step  47100/50000] loss=0.1132  lr=4.23e-07  grad=1.08  71.9 sa/s
+[step  47150/50000] loss=0.1052  lr=4.08e-07  grad=0.78  71.9 sa/s
+[step  47200/50000] loss=0.1116  lr=3.94e-07  grad=0.64  71.9 sa/s
+[step  47250/50000] loss=0.1082  lr=3.80e-07  grad=0.72  71.9 sa/s
+[step  47300/50000] loss=0.1070  lr=3.66e-07  grad=1.45  71.9 sa/s
+[step  47350/50000] loss=0.1115  lr=3.53e-07  grad=0.90  72.0 sa/s
+[step  47400/50000] loss=0.1125  lr=3.40e-07  grad=1.02  71.4 sa/s
+[step  47450/50000] loss=0.1116  lr=3.27e-07  grad=1.21  71.9 sa/s
+[step  47500/50000] loss=0.1075  lr=3.14e-07  grad=1.27  71.9 sa/s
+[step  47550/50000] loss=0.1057  lr=3.02e-07  grad=0.89  71.8 sa/s
+[step  47600/50000] loss=0.1066  lr=2.90e-07  grad=0.75  71.9 sa/s
+[step  47650/50000] loss=0.1104  lr=2.78e-07  grad=1.10  71.9 sa/s
+[step  47700/50000] loss=0.1074  lr=2.66e-07  grad=1.26  71.8 sa/s
+[step  47750/50000] loss=0.1159  lr=2.55e-07  grad=0.84  71.9 sa/s
+[step  47800/50000] loss=0.1112  lr=2.44e-07  grad=1.01  71.9 sa/s
+[step  47850/50000] loss=0.1147  lr=2.33e-07  grad=0.80  71.9 sa/s
+[step  47900/50000] loss=0.1175  lr=2.22e-07  grad=0.69  71.9 sa/s
+[step  47950/50000] loss=0.1148  lr=2.12e-07  grad=0.67  72.0 sa/s
+[step  48000/50000] loss=0.1092  lr=2.01e-07  grad=0.74  71.9 sa/s
+[eval   48000] val_loss=0.1334  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[step  48050/50000] loss=0.1146  lr=1.91e-07  grad=1.08  53.1 sa/s
+[step  48100/50000] loss=0.1130  lr=1.82e-07  grad=0.65  71.7 sa/s
+[step  48150/50000] loss=0.1071  lr=1.72e-07  grad=1.05  71.6 sa/s
+[step  48200/50000] loss=0.1091  lr=1.63e-07  grad=0.89  71.9 sa/s
+[step  48250/50000] loss=0.1069  lr=1.54e-07  grad=0.77  72.0 sa/s
+[step  48300/50000] loss=0.1119  lr=1.46e-07  grad=0.90  71.9 sa/s
+[step  48350/50000] loss=0.1129  lr=1.37e-07  grad=1.22  71.9 sa/s
+[step  48400/50000] loss=0.1075  lr=1.29e-07  grad=0.66  71.9 sa/s
+[step  48450/50000] loss=0.1122  lr=1.21e-07  grad=1.00  71.9 sa/s
+[step  48500/50000] loss=0.1115  lr=1.13e-07  grad=0.68  71.9 sa/s
+[step  48550/50000] loss=0.1130  lr=1.06e-07  grad=0.92  71.9 sa/s
+[step  48600/50000] loss=0.1134  lr=9.88e-08  grad=1.16  72.0 sa/s
+[step  48650/50000] loss=0.1100  lr=9.18e-08  grad=0.95  72.0 sa/s
+[step  48700/50000] loss=0.1075  lr=8.52e-08  grad=0.66  72.0 sa/s
+[step  48750/50000] loss=0.1077  lr=7.88e-08  grad=0.79  71.9 sa/s
+[step  48800/50000] loss=0.1155  lr=7.26e-08  grad=0.77  71.9 sa/s
+[step  48850/50000] loss=0.1082  lr=6.67e-08  grad=0.82  72.0 sa/s
+[step  48900/50000] loss=0.1097  lr=6.10e-08  grad=0.78  72.0 sa/s
+[step  48950/50000] loss=0.1141  lr=5.56e-08  grad=1.20  72.0 sa/s
+[step  49000/50000] loss=0.1129  lr=5.04e-08  grad=0.81  72.0 sa/s
+[step  49050/50000] loss=0.1102  lr=4.55e-08  grad=0.97  71.9 sa/s
+[step  49100/50000] loss=0.1063  lr=4.09e-08  grad=0.85  71.9 sa/s
+[step  49150/50000] loss=0.1167  lr=3.65e-08  grad=0.94  71.8 sa/s
+[step  49200/50000] loss=0.1148  lr=3.23e-08  grad=0.95  71.9 sa/s
+[step  49250/50000] loss=0.1089  lr=2.84e-08  grad=1.11  72.0 sa/s
+[step  49300/50000] loss=0.1129  lr=2.47e-08  grad=0.94  72.0 sa/s
+[step  49350/50000] loss=0.1135  lr=2.13e-08  grad=1.17  72.0 sa/s
+[step  49400/50000] loss=0.1086  lr=1.82e-08  grad=1.17  72.0 sa/s
+[step  49450/50000] loss=0.1090  lr=1.53e-08  grad=1.00  72.0 sa/s
+[step  49500/50000] loss=0.1071  lr=1.26e-08  grad=1.08  72.0 sa/s
+[step  49550/50000] loss=0.1118  lr=1.02e-08  grad=0.64  72.0 sa/s
+[step  49600/50000] loss=0.1062  lr=8.10e-09  grad=1.10  72.0 sa/s
+[step  49650/50000] loss=0.1105  lr=6.20e-09  grad=0.88  71.6 sa/s
+[step  49700/50000] loss=0.1081  lr=4.56e-09  grad=0.78  71.9 sa/s
+[step  49750/50000] loss=0.1075  lr=3.17e-09  grad=0.99  71.9 sa/s
+[step  49800/50000] loss=0.1112  lr=2.03e-09  grad=1.02  71.9 sa/s
+[step  49850/50000] loss=0.1110  lr=1.15e-09  grad=0.62  72.0 sa/s
+[step  49900/50000] loss=0.1091  lr=5.14e-10  grad=0.97  72.0 sa/s
+[step  49950/50000] loss=0.1148  lr=1.31e-10  grad=1.35  71.9 sa/s
+[step  50000/50000] loss=0.1154  lr=5.03e-14  grad=0.78  71.9 sa/s
+[eval   50000] val_loss=0.1348  (5.2s)
+[ckpt] saved checkpoints/joint-run-b/last.pt
+[done] final checkpoint: checkpoints/joint-run-b/final.pt
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading output.log
+wandb: 
+wandb: Run history:
+wandb:       train/grad_norm █▄▃▄▄▄▄▂▂▂▂▃▂▃▃▂▂▂▁▃▃▂▂▁▃▂▁▂▂▂▁▂▂▂▃▂▂▁▂▂
+wandb:            train/loss █▄▄▄▄▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:              train/lr ▄████████▇▇▇▇▇▆▆▆▅▅▅▅▅▄▄▄▄▃▃▃▃▃▃▃▃▂▂▂▂▂▁
+wandb: train/samples_per_sec ██████████████████████████████▇███▁█████
+wandb:            train/step ▁▁▁▂▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▆▆▆▆▇▇▇▇▇▇▇▇██
+wandb:              val/loss █▇▄▃▃▃▂▂▂▂▂▂▂▂▁▂▁▁▂▁▁▁▂▁▁
+wandb:              val/step ▁▁▂▂▂▂▃▃▃▄▄▄▅▅▅▅▆▆▆▇▇▇▇██
+wandb: 
+wandb: Run summary:
+wandb:       train/grad_norm 0.77935
+wandb:            train/loss 0.11538
+wandb:              train/lr 0.0
+wandb: train/samples_per_sec 71.92666
+wandb:            train/step 50000
+wandb:              val/loss 0.13476
+wandb:              val/step 50000
+wandb: 
+wandb: 🚀 View run joint-run-b at: https://wandb.ai/seankellymcgowan-kyilkhor/libero-vla/runs/7ofkm0sv
+wandb: ⭐️ View project at: https://wandb.ai/seankellymcgowan-kyilkhor/libero-vla
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260419_223854-7ofkm0sv/logs

@@ -1,0 +1,12 @@
+=== [23:56:08] libero_spatial H=5 ===
+--- done libero_spatial H=5 ---
+OVERALL: 399/500 (79.8%) in 3484s
+=== [00:54:40] libero_spatial H=10 ===
+[01:39:45] waiting for current evaluate process to finish...
+=== [04:58:33] libero_object H=10 ===
+--- done libero_object H=10 ---
+OVERALL: 434/500 (86.8%) in 2321s
+=== [05:37:53] libero_goal H=10 ===
+--- done libero_goal H=10 ---
+OVERALL: 409/500 (81.8%) in 2184s
+=== [06:14:46] libero_10 H=10 ===

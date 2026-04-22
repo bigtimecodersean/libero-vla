@@ -1,0 +1,3115 @@
+{
+  "suite": "libero_object",
+  "checkpoint": "checkpoints/joint-run-b/final.pt",
+  "train_step": 50000,
+  "execute_horizon": 10,
+  "num_flow_steps": 10,
+  "max_steps": 300,
+  "episodes_per_task": 100,
+  "tasks": [
+    {
+      "task_index": 0,
+      "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+      "language": "pick up the alphabet soup and place it in the basket",
+      "success_rate": 0.96,
+      "successes": 48,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 141,
+          "wallclock": 4.85
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 151,
+          "wallclock": 3.31
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 161,
+          "wallclock": 3.44
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 134,
+          "wallclock": 2.77
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 138,
+          "wallclock": 3.05
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 148,
+          "wallclock": 3.18
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 150,
+          "wallclock": 3.15
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 133,
+          "wallclock": 3.21
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 150,
+          "wallclock": 3.18
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 161,
+          "wallclock": 3.56
+        },
+        {
+          "episode": 10,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.26
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 142,
+          "wallclock": 3.11
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 151,
+          "wallclock": 3.27
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 146,
+          "wallclock": 3.34
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 141,
+          "wallclock": 3.18
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 143,
+          "wallclock": 3.53
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 176,
+          "wallclock": 3.6
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 127,
+          "wallclock": 2.57
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 148,
+          "wallclock": 3.19
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 154,
+          "wallclock": 3.28
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 130,
+          "wallclock": 2.74
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 145,
+          "wallclock": 3.07
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 142,
+          "wallclock": 3.19
+        },
+        {
+          "episode": 23,
+          "success": true,
+          "steps": 127,
+          "wallclock": 2.74
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 152,
+          "wallclock": 3.34
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 153,
+          "wallclock": 3.35
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 147,
+          "wallclock": 3.2
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "steps": 127,
+          "wallclock": 2.88
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "steps": 136,
+          "wallclock": 3.18
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "steps": 137,
+          "wallclock": 3.35
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "steps": 170,
+          "wallclock": 4.21
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 163,
+          "wallclock": 3.78
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 138,
+          "wallclock": 2.81
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 132,
+          "wallclock": 3.25
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 151,
+          "wallclock": 3.41
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 138,
+          "wallclock": 2.98
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 154,
+          "wallclock": 3.37
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 136,
+          "wallclock": 2.79
+        },
+        {
+          "episode": 38,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.67
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "steps": 132,
+          "wallclock": 2.91
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 150,
+          "wallclock": 3.51
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 158,
+          "wallclock": 3.83
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 129,
+          "wallclock": 2.77
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 144,
+          "wallclock": 3.06
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "steps": 160,
+          "wallclock": 3.72
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 139,
+          "wallclock": 3.23
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 142,
+          "wallclock": 3.29
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "steps": 150,
+          "wallclock": 3.2
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 161,
+          "wallclock": 3.52
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 149,
+          "wallclock": 3.21
+        }
+      ]
+    },
+    {
+      "task_index": 1,
+      "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "language": "pick up the cream cheese and place it in the basket",
+      "success_rate": 0.8,
+      "successes": 40,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 135,
+          "wallclock": 2.65
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 147,
+          "wallclock": 2.93
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 179,
+          "wallclock": 3.91
+        },
+        {
+          "episode": 3,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.94
+        },
+        {
+          "episode": 4,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.88
+        },
+        {
+          "episode": 5,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.92
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 139,
+          "wallclock": 2.71
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 117,
+          "wallclock": 2.26
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 131,
+          "wallclock": 2.9
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 259,
+          "wallclock": 5.12
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "steps": 177,
+          "wallclock": 3.4
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 181,
+          "wallclock": 4.18
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 121,
+          "wallclock": 2.42
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 131,
+          "wallclock": 3.04
+        },
+        {
+          "episode": 14,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.98
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 119,
+          "wallclock": 2.37
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 150,
+          "wallclock": 3.05
+        },
+        {
+          "episode": 17,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.1
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 134,
+          "wallclock": 2.69
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 120,
+          "wallclock": 2.32
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 159,
+          "wallclock": 3.22
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 218,
+          "wallclock": 4.95
+        },
+        {
+          "episode": 22,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.16
+        },
+        {
+          "episode": 23,
+          "success": true,
+          "steps": 132,
+          "wallclock": 2.65
+        },
+        {
+          "episode": 24,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.07
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 117,
+          "wallclock": 2.38
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 189,
+          "wallclock": 3.68
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "steps": 138,
+          "wallclock": 2.74
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "steps": 186,
+          "wallclock": 3.63
+        },
+        {
+          "episode": 29,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.12
+        },
+        {
+          "episode": 30,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.95
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 299,
+          "wallclock": 6.17
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 273,
+          "wallclock": 5.52
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 167,
+          "wallclock": 3.32
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 161,
+          "wallclock": 3.63
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 118,
+          "wallclock": 2.39
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 139,
+          "wallclock": 2.72
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 162,
+          "wallclock": 3.39
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 129,
+          "wallclock": 2.76
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "steps": 128,
+          "wallclock": 2.89
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 136,
+          "wallclock": 2.82
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 228,
+          "wallclock": 4.57
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 157,
+          "wallclock": 3.2
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 251,
+          "wallclock": 5.42
+        },
+        {
+          "episode": 44,
+          "success": false,
+          "steps": 300,
+          "wallclock": 7.16
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 220,
+          "wallclock": 5.22
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 127,
+          "wallclock": 2.95
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "steps": 139,
+          "wallclock": 2.87
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 187,
+          "wallclock": 3.75
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 258,
+          "wallclock": 5.42
+        }
+      ]
+    },
+    {
+      "task_index": 2,
+      "name": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+      "language": "pick up the salad dressing and place it in the basket",
+      "success_rate": 0.96,
+      "successes": 48,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 133,
+          "wallclock": 2.82
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 133,
+          "wallclock": 2.89
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 127,
+          "wallclock": 2.68
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 142,
+          "wallclock": 3.13
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 109,
+          "wallclock": 2.22
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 123,
+          "wallclock": 2.63
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 223,
+          "wallclock": 4.59
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 113,
+          "wallclock": 2.37
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 300,
+          "wallclock": 6.05
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 132,
+          "wallclock": 2.85
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "steps": 113,
+          "wallclock": 2.44
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 119,
+          "wallclock": 2.75
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 113,
+          "wallclock": 2.54
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 122,
+          "wallclock": 2.74
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 123,
+          "wallclock": 2.6
+        },
+        {
+          "episode": 15,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.22
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 122,
+          "wallclock": 2.63
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 120,
+          "wallclock": 2.5
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 125,
+          "wallclock": 2.73
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 125,
+          "wallclock": 2.69
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 131,
+          "wallclock": 2.91
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 115,
+          "wallclock": 2.4
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 136,
+          "wallclock": 2.88
+        },
+        {
+          "episode": 23,
+          "success": true,
+          "steps": 117,
+          "wallclock": 2.73
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 125,
+          "wallclock": 2.54
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 125,
+          "wallclock": 2.55
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 119,
+          "wallclock": 2.4
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "steps": 125,
+          "wallclock": 2.61
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "steps": 124,
+          "wallclock": 2.52
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "steps": 130,
+          "wallclock": 2.68
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "steps": 112,
+          "wallclock": 2.38
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 181,
+          "wallclock": 3.72
+        },
+        {
+          "episode": 32,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.13
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 138,
+          "wallclock": 2.82
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 125,
+          "wallclock": 2.63
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 159,
+          "wallclock": 3.19
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 127,
+          "wallclock": 2.58
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 124,
+          "wallclock": 2.66
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 124,
+          "wallclock": 2.62
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "steps": 127,
+          "wallclock": 2.63
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 129,
+          "wallclock": 2.51
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 127,
+          "wallclock": 2.65
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 136,
+          "wallclock": 2.8
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 130,
+          "wallclock": 2.7
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "steps": 123,
+          "wallclock": 2.63
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 121,
+          "wallclock": 2.49
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 133,
+          "wallclock": 2.7
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "steps": 121,
+          "wallclock": 2.47
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 127,
+          "wallclock": 2.69
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 135,
+          "wallclock": 2.73
+        }
+      ]
+    },
+    {
+      "task_index": 3,
+      "name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+      "language": "pick up the bbq sauce and place it in the basket",
+      "success_rate": 0.86,
+      "successes": 43,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.71
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 158,
+          "wallclock": 3.06
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 134,
+          "wallclock": 2.66
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 191,
+          "wallclock": 3.76
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 135,
+          "wallclock": 2.64
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 128,
+          "wallclock": 2.43
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 130,
+          "wallclock": 2.56
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 240,
+          "wallclock": 4.6
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 156,
+          "wallclock": 3.07
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 138,
+          "wallclock": 2.64
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "steps": 141,
+          "wallclock": 2.96
+        },
+        {
+          "episode": 11,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.67
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 148,
+          "wallclock": 2.87
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 139,
+          "wallclock": 2.72
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 222,
+          "wallclock": 4.82
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 129,
+          "wallclock": 2.61
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 129,
+          "wallclock": 2.54
+        },
+        {
+          "episode": 17,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.23
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 151,
+          "wallclock": 3.15
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 200,
+          "wallclock": 3.89
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 127,
+          "wallclock": 2.78
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 177,
+          "wallclock": 3.45
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 140,
+          "wallclock": 2.78
+        },
+        {
+          "episode": 23,
+          "success": true,
+          "steps": 129,
+          "wallclock": 2.49
+        },
+        {
+          "episode": 24,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.69
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 136,
+          "wallclock": 2.7
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 207,
+          "wallclock": 4.01
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "steps": 145,
+          "wallclock": 2.8
+        },
+        {
+          "episode": 28,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.67
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "steps": 137,
+          "wallclock": 2.66
+        },
+        {
+          "episode": 30,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.65
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 135,
+          "wallclock": 2.88
+        },
+        {
+          "episode": 32,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.32
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 126,
+          "wallclock": 2.49
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 240,
+          "wallclock": 5.24
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 203,
+          "wallclock": 3.91
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 141,
+          "wallclock": 2.9
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 133,
+          "wallclock": 2.59
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 200,
+          "wallclock": 3.87
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "steps": 205,
+          "wallclock": 3.94
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 147,
+          "wallclock": 2.87
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 117,
+          "wallclock": 2.26
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 134,
+          "wallclock": 2.63
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 136,
+          "wallclock": 2.67
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "steps": 123,
+          "wallclock": 2.52
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 141,
+          "wallclock": 2.76
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 154,
+          "wallclock": 2.92
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "steps": 116,
+          "wallclock": 2.2
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 118,
+          "wallclock": 2.31
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 153,
+          "wallclock": 3.04
+        }
+      ]
+    },
+    {
+      "task_index": 4,
+      "name": "pick_up_the_ketchup_and_place_it_in_the_basket",
+      "language": "pick up the ketchup and place it in the basket",
+      "success_rate": 0.92,
+      "successes": 46,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 159,
+          "wallclock": 3.08
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 147,
+          "wallclock": 3.04
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 156,
+          "wallclock": 3.06
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 161,
+          "wallclock": 3.23
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 211,
+          "wallclock": 4.44
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 138,
+          "wallclock": 2.7
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 140,
+          "wallclock": 2.78
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 141,
+          "wallclock": 2.81
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 137,
+          "wallclock": 2.72
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 149,
+          "wallclock": 2.87
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "steps": 146,
+          "wallclock": 2.93
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 135,
+          "wallclock": 2.68
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 159,
+          "wallclock": 3.11
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 177,
+          "wallclock": 3.68
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 149,
+          "wallclock": 2.95
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 157,
+          "wallclock": 3.0
+        },
+        {
+          "episode": 16,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.72
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 147,
+          "wallclock": 2.92
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 156,
+          "wallclock": 3.07
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 151,
+          "wallclock": 2.94
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 140,
+          "wallclock": 2.7
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 149,
+          "wallclock": 2.92
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 136,
+          "wallclock": 2.94
+        },
+        {
+          "episode": 23,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.53
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 152,
+          "wallclock": 3.03
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 136,
+          "wallclock": 2.77
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 147,
+          "wallclock": 2.82
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "steps": 147,
+          "wallclock": 2.82
+        },
+        {
+          "episode": 28,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.11
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "steps": 146,
+          "wallclock": 2.81
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "steps": 146,
+          "wallclock": 2.93
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 151,
+          "wallclock": 3.32
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 162,
+          "wallclock": 3.61
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 159,
+          "wallclock": 3.16
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 139,
+          "wallclock": 2.65
+        },
+        {
+          "episode": 35,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.61
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 140,
+          "wallclock": 2.87
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 147,
+          "wallclock": 2.84
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 148,
+          "wallclock": 2.93
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "steps": 152,
+          "wallclock": 3.18
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 144,
+          "wallclock": 2.81
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 144,
+          "wallclock": 2.85
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 180,
+          "wallclock": 3.47
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 201,
+          "wallclock": 4.11
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "steps": 161,
+          "wallclock": 3.27
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 149,
+          "wallclock": 2.88
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 160,
+          "wallclock": 3.26
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "steps": 153,
+          "wallclock": 3.02
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 139,
+          "wallclock": 2.71
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 136,
+          "wallclock": 2.64
+        }
+      ]
+    },
+    {
+      "task_index": 5,
+      "name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+      "language": "pick up the tomato sauce and place it in the basket",
+      "success_rate": 0.78,
+      "successes": 39,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 131,
+          "wallclock": 2.69
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 121,
+          "wallclock": 2.54
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 141,
+          "wallclock": 2.78
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 133,
+          "wallclock": 2.76
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 117,
+          "wallclock": 2.31
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 127,
+          "wallclock": 2.86
+        },
+        {
+          "episode": 6,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.87
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 132,
+          "wallclock": 2.68
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 262,
+          "wallclock": 5.14
+        },
+        {
+          "episode": 9,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.89
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "steps": 134,
+          "wallclock": 2.73
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 134,
+          "wallclock": 3.04
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 129,
+          "wallclock": 2.59
+        },
+        {
+          "episode": 13,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.98
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 181,
+          "wallclock": 4.34
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 126,
+          "wallclock": 2.54
+        },
+        {
+          "episode": 16,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.89
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 128,
+          "wallclock": 2.94
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 131,
+          "wallclock": 2.78
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 208,
+          "wallclock": 4.12
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 139,
+          "wallclock": 2.71
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 134,
+          "wallclock": 2.77
+        },
+        {
+          "episode": 22,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.7
+        },
+        {
+          "episode": 23,
+          "success": true,
+          "steps": 126,
+          "wallclock": 2.76
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 137,
+          "wallclock": 2.79
+        },
+        {
+          "episode": 25,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.03
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 137,
+          "wallclock": 2.81
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "steps": 191,
+          "wallclock": 3.89
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "steps": 144,
+          "wallclock": 3.04
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "steps": 162,
+          "wallclock": 3.46
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "steps": 138,
+          "wallclock": 3.42
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 145,
+          "wallclock": 3.41
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 129,
+          "wallclock": 2.61
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 156,
+          "wallclock": 3.24
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 147,
+          "wallclock": 2.97
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 179,
+          "wallclock": 3.55
+        },
+        {
+          "episode": 36,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.95
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 128,
+          "wallclock": 2.62
+        },
+        {
+          "episode": 38,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.62
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "steps": 135,
+          "wallclock": 3.07
+        },
+        {
+          "episode": 40,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.71
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 139,
+          "wallclock": 2.82
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 256,
+          "wallclock": 5.3
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 173,
+          "wallclock": 3.6
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "steps": 119,
+          "wallclock": 2.4
+        },
+        {
+          "episode": 45,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.99
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 122,
+          "wallclock": 2.77
+        },
+        {
+          "episode": 47,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.85
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 140,
+          "wallclock": 2.79
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 147,
+          "wallclock": 2.98
+        }
+      ]
+    },
+    {
+      "task_index": 6,
+      "name": "pick_up_the_butter_and_place_it_in_the_basket",
+      "language": "pick up the butter and place it in the basket",
+      "success_rate": 0.96,
+      "successes": 48,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 171,
+          "wallclock": 3.37
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 167,
+          "wallclock": 3.28
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 158,
+          "wallclock": 3.01
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 145,
+          "wallclock": 2.82
+        },
+        {
+          "episode": 4,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.65
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 161,
+          "wallclock": 3.21
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 150,
+          "wallclock": 2.96
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 151,
+          "wallclock": 2.96
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 172,
+          "wallclock": 3.52
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 160,
+          "wallclock": 3.12
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "steps": 153,
+          "wallclock": 3.2
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 148,
+          "wallclock": 3.11
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 157,
+          "wallclock": 3.33
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 199,
+          "wallclock": 4.17
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 150,
+          "wallclock": 3.24
+        },
+        {
+          "episode": 15,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.23
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 162,
+          "wallclock": 3.38
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 137,
+          "wallclock": 2.96
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 149,
+          "wallclock": 3.08
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 148,
+          "wallclock": 3.09
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 142,
+          "wallclock": 3.16
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 157,
+          "wallclock": 3.73
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 149,
+          "wallclock": 3.4
+        },
+        {
+          "episode": 23,
+          "success": true,
+          "steps": 162,
+          "wallclock": 4.08
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 147,
+          "wallclock": 3.43
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 157,
+          "wallclock": 3.49
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 137,
+          "wallclock": 2.98
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "steps": 142,
+          "wallclock": 3.17
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "steps": 187,
+          "wallclock": 4.02
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "steps": 152,
+          "wallclock": 3.51
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "steps": 148,
+          "wallclock": 3.32
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 157,
+          "wallclock": 3.56
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 146,
+          "wallclock": 3.26
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 159,
+          "wallclock": 3.55
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 201,
+          "wallclock": 4.64
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 150,
+          "wallclock": 3.16
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 156,
+          "wallclock": 3.3
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 147,
+          "wallclock": 3.09
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 160,
+          "wallclock": 3.32
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "steps": 139,
+          "wallclock": 3.02
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 149,
+          "wallclock": 3.06
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 219,
+          "wallclock": 4.47
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 217,
+          "wallclock": 4.59
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 207,
+          "wallclock": 4.2
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "steps": 165,
+          "wallclock": 3.77
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 167,
+          "wallclock": 3.82
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 152,
+          "wallclock": 3.71
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "steps": 147,
+          "wallclock": 3.06
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 161,
+          "wallclock": 3.87
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 157,
+          "wallclock": 4.19
+        }
+      ]
+    },
+    {
+      "task_index": 7,
+      "name": "pick_up_the_milk_and_place_it_in_the_basket",
+      "language": "pick up the milk and place it in the basket",
+      "success_rate": 0.84,
+      "successes": 42,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 142,
+          "wallclock": 3.18
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 181,
+          "wallclock": 4.47
+        },
+        {
+          "episode": 2,
+          "success": false,
+          "steps": 300,
+          "wallclock": 7.28
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 269,
+          "wallclock": 5.75
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 140,
+          "wallclock": 2.93
+        },
+        {
+          "episode": 5,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.53
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 151,
+          "wallclock": 3.78
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 251,
+          "wallclock": 6.73
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 159,
+          "wallclock": 4.49
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 141,
+          "wallclock": 3.93
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "steps": 137,
+          "wallclock": 3.68
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 148,
+          "wallclock": 3.7
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 140,
+          "wallclock": 3.65
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 198,
+          "wallclock": 5.19
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 153,
+          "wallclock": 3.62
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 245,
+          "wallclock": 6.29
+        },
+        {
+          "episode": 16,
+          "success": false,
+          "steps": 300,
+          "wallclock": 7.42
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 146,
+          "wallclock": 3.59
+        },
+        {
+          "episode": 18,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.28
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 173,
+          "wallclock": 4.19
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 192,
+          "wallclock": 4.18
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 160,
+          "wallclock": 3.39
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 137,
+          "wallclock": 2.92
+        },
+        {
+          "episode": 23,
+          "success": true,
+          "steps": 149,
+          "wallclock": 3.17
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 148,
+          "wallclock": 3.07
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 127,
+          "wallclock": 2.57
+        },
+        {
+          "episode": 26,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.83
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "steps": 125,
+          "wallclock": 2.51
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "steps": 142,
+          "wallclock": 2.93
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "steps": 147,
+          "wallclock": 3.06
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "steps": 126,
+          "wallclock": 2.71
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 196,
+          "wallclock": 4.15
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 151,
+          "wallclock": 3.28
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 181,
+          "wallclock": 3.99
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 142,
+          "wallclock": 2.92
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 136,
+          "wallclock": 3.09
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 141,
+          "wallclock": 3.16
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 126,
+          "wallclock": 2.67
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 135,
+          "wallclock": 3.21
+        },
+        {
+          "episode": 39,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.02
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 140,
+          "wallclock": 2.92
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 157,
+          "wallclock": 3.37
+        },
+        {
+          "episode": 42,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.9
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 146,
+          "wallclock": 3.06
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "steps": 190,
+          "wallclock": 4.12
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 138,
+          "wallclock": 3.49
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 149,
+          "wallclock": 3.17
+        },
+        {
+          "episode": 47,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.18
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 131,
+          "wallclock": 2.83
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 155,
+          "wallclock": 3.64
+        }
+      ]
+    },
+    {
+      "task_index": 8,
+      "name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+      "language": "pick up the chocolate pudding and place it in the basket",
+      "success_rate": 1.0,
+      "successes": 50,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 150,
+          "wallclock": 3.1
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 168,
+          "wallclock": 3.45
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 154,
+          "wallclock": 3.27
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 151,
+          "wallclock": 3.76
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 168,
+          "wallclock": 3.84
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 157,
+          "wallclock": 3.39
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 149,
+          "wallclock": 3.23
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 150,
+          "wallclock": 3.57
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 177,
+          "wallclock": 4.07
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 150,
+          "wallclock": 3.32
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "steps": 148,
+          "wallclock": 3.18
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 143,
+          "wallclock": 3.01
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 147,
+          "wallclock": 3.17
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 152,
+          "wallclock": 3.3
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 151,
+          "wallclock": 3.31
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 201,
+          "wallclock": 4.21
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 166,
+          "wallclock": 3.58
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 167,
+          "wallclock": 3.56
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 143,
+          "wallclock": 3.14
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 157,
+          "wallclock": 3.37
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 168,
+          "wallclock": 4.29
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 149,
+          "wallclock": 3.19
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 152,
+          "wallclock": 3.21
+        },
+        {
+          "episode": 23,
+          "success": true,
+          "steps": 278,
+          "wallclock": 5.72
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 158,
+          "wallclock": 3.25
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 149,
+          "wallclock": 3.03
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 149,
+          "wallclock": 2.97
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "steps": 151,
+          "wallclock": 3.04
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "steps": 159,
+          "wallclock": 3.28
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "steps": 227,
+          "wallclock": 4.85
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "steps": 148,
+          "wallclock": 3.63
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 176,
+          "wallclock": 4.38
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 155,
+          "wallclock": 3.39
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 153,
+          "wallclock": 3.4
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 180,
+          "wallclock": 4.1
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 149,
+          "wallclock": 3.1
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 140,
+          "wallclock": 2.8
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 157,
+          "wallclock": 3.18
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 147,
+          "wallclock": 3.24
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "steps": 148,
+          "wallclock": 2.99
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 152,
+          "wallclock": 3.15
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 148,
+          "wallclock": 2.99
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 138,
+          "wallclock": 2.86
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 169,
+          "wallclock": 3.34
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "steps": 163,
+          "wallclock": 3.27
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 151,
+          "wallclock": 3.09
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 152,
+          "wallclock": 3.17
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "steps": 148,
+          "wallclock": 2.98
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 152,
+          "wallclock": 3.12
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 148,
+          "wallclock": 3.33
+        }
+      ]
+    },
+    {
+      "task_index": 9,
+      "name": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+      "language": "pick up the orange juice and place it in the basket",
+      "success_rate": 0.6,
+      "successes": 30,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.83
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 151,
+          "wallclock": 3.59
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 123,
+          "wallclock": 2.52
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 129,
+          "wallclock": 2.64
+        },
+        {
+          "episode": 4,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.46
+        },
+        {
+          "episode": 5,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.03
+        },
+        {
+          "episode": 6,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.4
+        },
+        {
+          "episode": 7,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.91
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 121,
+          "wallclock": 2.5
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 288,
+          "wallclock": 5.88
+        },
+        {
+          "episode": 10,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.68
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 194,
+          "wallclock": 3.92
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 126,
+          "wallclock": 2.54
+        },
+        {
+          "episode": 13,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.91
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 121,
+          "wallclock": 2.51
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 158,
+          "wallclock": 3.17
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 117,
+          "wallclock": 2.34
+        },
+        {
+          "episode": 17,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.62
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 177,
+          "wallclock": 3.78
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 129,
+          "wallclock": 2.68
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 197,
+          "wallclock": 3.88
+        },
+        {
+          "episode": 21,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.67
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 135,
+          "wallclock": 2.62
+        },
+        {
+          "episode": 23,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.34
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 125,
+          "wallclock": 2.46
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 160,
+          "wallclock": 3.11
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 120,
+          "wallclock": 2.35
+        },
+        {
+          "episode": 27,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.81
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "steps": 128,
+          "wallclock": 2.52
+        },
+        {
+          "episode": 29,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.71
+        },
+        {
+          "episode": 30,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.78
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 125,
+          "wallclock": 2.51
+        },
+        {
+          "episode": 32,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.53
+        },
+        {
+          "episode": 33,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.76
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 146,
+          "wallclock": 3.27
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 132,
+          "wallclock": 2.7
+        },
+        {
+          "episode": 36,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.93
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 184,
+          "wallclock": 3.74
+        },
+        {
+          "episode": 38,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.04
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "steps": 154,
+          "wallclock": 3.07
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 120,
+          "wallclock": 2.64
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 128,
+          "wallclock": 2.7
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 154,
+          "wallclock": 3.15
+        },
+        {
+          "episode": 43,
+          "success": false,
+          "steps": 300,
+          "wallclock": 6.41
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "steps": 140,
+          "wallclock": 2.93
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 199,
+          "wallclock": 3.97
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 119,
+          "wallclock": 2.32
+        },
+        {
+          "episode": 47,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.61
+        },
+        {
+          "episode": 48,
+          "success": false,
+          "steps": 300,
+          "wallclock": 5.53
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 140,
+          "wallclock": 2.69
+        }
+      ]
+    }
+  ],
+  "overall_success_rate": 0.868,
+  "overall_successes": 434,
+  "overall_episodes": 500,
+  "total_wallclock": 2321.2
+}

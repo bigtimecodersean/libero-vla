@@ -1,0 +1,3115 @@
+{
+  "suite": "libero_spatial",
+  "checkpoint": "checkpoints/joint-run-b/final.pt",
+  "train_step": 50000,
+  "execute_horizon": 5,
+  "num_flow_steps": 10,
+  "max_steps": 300,
+  "episodes_per_task": 100,
+  "tasks": [
+    {
+      "task_index": 0,
+      "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "success_rate": 0.76,
+      "successes": 38,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 85,
+          "wallclock": 3.59
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 84,
+          "wallclock": 2.81
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 157,
+          "wallclock": 5.11
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 79,
+          "wallclock": 2.62
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 78,
+          "wallclock": 2.67
+        },
+        {
+          "episode": 5,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.27
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 77,
+          "wallclock": 2.77
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 88,
+          "wallclock": 3.14
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 84,
+          "wallclock": 2.81
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 78,
+          "wallclock": 2.68
+        },
+        {
+          "episode": 10,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.24
+        },
+        {
+          "episode": 11,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.04
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 71,
+          "wallclock": 2.64
+        },
+        {
+          "episode": 13,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.15
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 129,
+          "wallclock": 4.22
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 77,
+          "wallclock": 2.62
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 83,
+          "wallclock": 2.67
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 75,
+          "wallclock": 2.54
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 215,
+          "wallclock": 7.13
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 77,
+          "wallclock": 2.91
+        },
+        {
+          "episode": 20,
+          "success": false,
+          "steps": 300,
+          "wallclock": 9.79
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 84,
+          "wallclock": 2.83
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 261,
+          "wallclock": 8.54
+        },
+        {
+          "episode": 23,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.09
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 200,
+          "wallclock": 6.53
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 70,
+          "wallclock": 2.33
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 93,
+          "wallclock": 3.16
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "steps": 84,
+          "wallclock": 2.78
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "steps": 88,
+          "wallclock": 2.91
+        },
+        {
+          "episode": 29,
+          "success": false,
+          "steps": 300,
+          "wallclock": 9.95
+        },
+        {
+          "episode": 30,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.06
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 95,
+          "wallclock": 3.29
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 112,
+          "wallclock": 4.0
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 97,
+          "wallclock": 3.33
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 294,
+          "wallclock": 9.75
+        },
+        {
+          "episode": 35,
+          "success": false,
+          "steps": 300,
+          "wallclock": 9.84
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 77,
+          "wallclock": 2.55
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 86,
+          "wallclock": 2.94
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 233,
+          "wallclock": 7.71
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "steps": 92,
+          "wallclock": 3.13
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 78,
+          "wallclock": 2.69
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 91,
+          "wallclock": 3.09
+        },
+        {
+          "episode": 42,
+          "success": false,
+          "steps": 300,
+          "wallclock": 9.86
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 89,
+          "wallclock": 2.99
+        },
+        {
+          "episode": 44,
+          "success": false,
+          "steps": 300,
+          "wallclock": 9.66
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 78,
+          "wallclock": 2.61
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 75,
+          "wallclock": 2.79
+        },
+        {
+          "episode": 47,
+          "success": false,
+          "steps": 300,
+          "wallclock": 9.42
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 75,
+          "wallclock": 2.39
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 78,
+          "wallclock": 2.61
+        }
+      ]
+    },
+    {
+      "task_index": 1,
+      "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "success_rate": 0.94,
+      "successes": 47,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": false,
+          "steps": 300,
+          "wallclock": 9.9
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 122,
+          "wallclock": 4.15
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 106,
+          "wallclock": 3.61
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 128,
+          "wallclock": 4.39
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 124,
+          "wallclock": 4.35
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 115,
+          "wallclock": 3.76
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 128,
+          "wallclock": 4.27
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 125,
+          "wallclock": 4.29
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 114,
+          "wallclock": 4.04
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 260,
+          "wallclock": 8.91
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "steps": 123,
+          "wallclock": 4.2
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 105,
+          "wallclock": 3.58
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 132,
+          "wallclock": 4.61
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 113,
+          "wallclock": 3.9
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 113,
+          "wallclock": 4.12
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 127,
+          "wallclock": 4.47
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 114,
+          "wallclock": 3.82
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 107,
+          "wallclock": 3.65
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 141,
+          "wallclock": 5.12
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 126,
+          "wallclock": 4.37
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 126,
+          "wallclock": 4.3
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 167,
+          "wallclock": 5.86
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 123,
+          "wallclock": 4.21
+        },
+        {
+          "episode": 23,
+          "success": true,
+          "steps": 157,
+          "wallclock": 5.38
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 128,
+          "wallclock": 4.47
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 285,
+          "wallclock": 9.8
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 171,
+          "wallclock": 5.95
+        },
+        {
+          "episode": 27,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.44
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "steps": 114,
+          "wallclock": 3.85
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "steps": 123,
+          "wallclock": 4.28
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "steps": 146,
+          "wallclock": 5.19
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 163,
+          "wallclock": 5.8
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 156,
+          "wallclock": 5.56
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 114,
+          "wallclock": 3.87
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 136,
+          "wallclock": 4.76
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 135,
+          "wallclock": 4.64
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 164,
+          "wallclock": 5.79
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 125,
+          "wallclock": 4.55
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 247,
+          "wallclock": 8.71
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "steps": 136,
+          "wallclock": 4.81
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 113,
+          "wallclock": 3.96
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 114,
+          "wallclock": 3.8
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 177,
+          "wallclock": 6.19
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 109,
+          "wallclock": 3.73
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "steps": 107,
+          "wallclock": 3.66
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 143,
+          "wallclock": 5.1
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 108,
+          "wallclock": 3.75
+        },
+        {
+          "episode": 47,
+          "success": false,
+          "steps": 300,
+          "wallclock": 9.91
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 148,
+          "wallclock": 4.97
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 118,
+          "wallclock": 3.93
+        }
+      ]
+    },
+    {
+      "task_index": 2,
+      "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "success_rate": 0.98,
+      "successes": 49,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 122,
+          "wallclock": 4.22
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 110,
+          "wallclock": 3.65
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 118,
+          "wallclock": 4.16
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 91,
+          "wallclock": 3.19
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 111,
+          "wallclock": 3.93
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 127,
+          "wallclock": 4.25
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 105,
+          "wallclock": 3.55
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 100,
+          "wallclock": 3.28
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 108,
+          "wallclock": 3.57
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 110,
+          "wallclock": 3.53
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "steps": 131,
+          "wallclock": 4.66
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 100,
+          "wallclock": 3.34
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 99,
+          "wallclock": 3.29
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 122,
+          "wallclock": 4.1
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 101,
+          "wallclock": 3.45
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 110,
+          "wallclock": 3.74
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 95,
+          "wallclock": 3.1
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 205,
+          "wallclock": 6.71
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 101,
+          "wallclock": 3.31
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 108,
+          "wallclock": 3.69
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 113,
+          "wallclock": 4.01
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 107,
+          "wallclock": 3.82
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 102,
+          "wallclock": 3.4
+        },
+        {
+          "episode": 23,
+          "success": true,
+          "steps": 129,
+          "wallclock": 4.48
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 100,
+          "wallclock": 3.36
+        },
+        {
+          "episode": 25,
+          "success": false,
+          "steps": 300,
+          "wallclock": 9.95
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 109,
+          "wallclock": 3.65
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "steps": 99,
+          "wallclock": 3.46
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "steps": 107,
+          "wallclock": 3.63
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "steps": 106,
+          "wallclock": 3.46
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "steps": 93,
+          "wallclock": 3.05
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 114,
+          "wallclock": 3.99
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 109,
+          "wallclock": 3.67
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 101,
+          "wallclock": 3.55
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 122,
+          "wallclock": 4.32
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 101,
+          "wallclock": 3.51
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 107,
+          "wallclock": 3.65
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 122,
+          "wallclock": 4.16
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 121,
+          "wallclock": 4.26
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "steps": 94,
+          "wallclock": 3.3
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 118,
+          "wallclock": 4.0
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 146,
+          "wallclock": 5.13
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 112,
+          "wallclock": 3.95
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 97,
+          "wallclock": 3.3
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "steps": 106,
+          "wallclock": 3.6
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 100,
+          "wallclock": 3.5
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 115,
+          "wallclock": 3.86
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "steps": 116,
+          "wallclock": 3.93
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 110,
+          "wallclock": 3.74
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 120,
+          "wallclock": 4.23
+        }
+      ]
+    },
+    {
+      "task_index": 3,
+      "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "success_rate": 0.88,
+      "successes": 44,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 99,
+          "wallclock": 3.47
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 98,
+          "wallclock": 3.41
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 81,
+          "wallclock": 2.82
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 89,
+          "wallclock": 3.0
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 86,
+          "wallclock": 3.0
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 107,
+          "wallclock": 3.73
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 107,
+          "wallclock": 3.75
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 118,
+          "wallclock": 4.16
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 119,
+          "wallclock": 4.13
+        },
+        {
+          "episode": 9,
+          "success": false,
+          "steps": 300,
+          "wallclock": 9.97
+        },
+        {
+          "episode": 10,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.25
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 95,
+          "wallclock": 3.33
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 102,
+          "wallclock": 3.71
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 92,
+          "wallclock": 3.16
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 151,
+          "wallclock": 5.5
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 89,
+          "wallclock": 3.07
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 210,
+          "wallclock": 7.07
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 97,
+          "wallclock": 3.37
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 136,
+          "wallclock": 4.81
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 86,
+          "wallclock": 2.98
+        },
+        {
+          "episode": 20,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.4
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 93,
+          "wallclock": 3.28
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 94,
+          "wallclock": 3.17
+        },
+        {
+          "episode": 23,
+          "success": true,
+          "steps": 91,
+          "wallclock": 3.22
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 120,
+          "wallclock": 4.32
+        },
+        {
+          "episode": 25,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.45
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 81,
+          "wallclock": 2.79
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "steps": 90,
+          "wallclock": 3.15
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "steps": 92,
+          "wallclock": 3.16
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "steps": 95,
+          "wallclock": 3.35
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "steps": 122,
+          "wallclock": 4.28
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 100,
+          "wallclock": 3.7
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 93,
+          "wallclock": 3.21
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 100,
+          "wallclock": 3.4
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 116,
+          "wallclock": 4.04
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 93,
+          "wallclock": 3.28
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 86,
+          "wallclock": 3.0
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 174,
+          "wallclock": 5.91
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 105,
+          "wallclock": 3.69
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "steps": 196,
+          "wallclock": 7.06
+        },
+        {
+          "episode": 40,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.19
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 95,
+          "wallclock": 3.38
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 120,
+          "wallclock": 4.19
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 94,
+          "wallclock": 3.22
+        },
+        {
+          "episode": 44,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.03
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 104,
+          "wallclock": 3.54
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 93,
+          "wallclock": 3.23
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "steps": 160,
+          "wallclock": 5.76
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 99,
+          "wallclock": 3.44
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 92,
+          "wallclock": 3.26
+        }
+      ]
+    },
+    {
+      "task_index": 4,
+      "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "success_rate": 0.7,
+      "successes": 35,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.7
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 143,
+          "wallclock": 4.91
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 189,
+          "wallclock": 6.78
+        },
+        {
+          "episode": 3,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.45
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 143,
+          "wallclock": 4.97
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 146,
+          "wallclock": 5.16
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 134,
+          "wallclock": 4.63
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 145,
+          "wallclock": 5.16
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 145,
+          "wallclock": 4.98
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 155,
+          "wallclock": 5.31
+        },
+        {
+          "episode": 10,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.81
+        },
+        {
+          "episode": 11,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.91
+        },
+        {
+          "episode": 12,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.02
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 147,
+          "wallclock": 5.24
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 171,
+          "wallclock": 6.32
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 145,
+          "wallclock": 5.21
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 129,
+          "wallclock": 4.7
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 141,
+          "wallclock": 5.39
+        },
+        {
+          "episode": 18,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.96
+        },
+        {
+          "episode": 19,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.53
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 128,
+          "wallclock": 5.09
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 141,
+          "wallclock": 5.56
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 157,
+          "wallclock": 6.12
+        },
+        {
+          "episode": 23,
+          "success": true,
+          "steps": 148,
+          "wallclock": 6.22
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 113,
+          "wallclock": 4.82
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 135,
+          "wallclock": 5.6
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 134,
+          "wallclock": 5.42
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "steps": 144,
+          "wallclock": 5.84
+        },
+        {
+          "episode": 28,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.61
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "steps": 130,
+          "wallclock": 4.53
+        },
+        {
+          "episode": 30,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.24
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 146,
+          "wallclock": 5.1
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 120,
+          "wallclock": 4.17
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 134,
+          "wallclock": 4.6
+        },
+        {
+          "episode": 34,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.57
+        },
+        {
+          "episode": 35,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.14
+        },
+        {
+          "episode": 36,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.56
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 157,
+          "wallclock": 5.47
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 149,
+          "wallclock": 5.21
+        },
+        {
+          "episode": 39,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.65
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 124,
+          "wallclock": 4.33
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 139,
+          "wallclock": 4.93
+        },
+        {
+          "episode": 42,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.81
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 128,
+          "wallclock": 4.42
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "steps": 127,
+          "wallclock": 4.52
+        },
+        {
+          "episode": 45,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.75
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 142,
+          "wallclock": 5.05
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "steps": 141,
+          "wallclock": 4.86
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 207,
+          "wallclock": 7.45
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 142,
+          "wallclock": 4.99
+        }
+      ]
+    },
+    {
+      "task_index": 5,
+      "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "success_rate": 0.22,
+      "successes": 11,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 97,
+          "wallclock": 3.67
+        },
+        {
+          "episode": 1,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.04
+        },
+        {
+          "episode": 2,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.02
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 233,
+          "wallclock": 8.48
+        },
+        {
+          "episode": 4,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.38
+        },
+        {
+          "episode": 5,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.42
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 100,
+          "wallclock": 3.43
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 91,
+          "wallclock": 3.16
+        },
+        {
+          "episode": 8,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.39
+        },
+        {
+          "episode": 9,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.47
+        },
+        {
+          "episode": 10,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.65
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 91,
+          "wallclock": 3.44
+        },
+        {
+          "episode": 12,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.43
+        },
+        {
+          "episode": 13,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.27
+        },
+        {
+          "episode": 14,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.1
+        },
+        {
+          "episode": 15,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.28
+        },
+        {
+          "episode": 16,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.75
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 94,
+          "wallclock": 3.41
+        },
+        {
+          "episode": 18,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.5
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 95,
+          "wallclock": 3.45
+        },
+        {
+          "episode": 20,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.22
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 98,
+          "wallclock": 3.71
+        },
+        {
+          "episode": 22,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.45
+        },
+        {
+          "episode": 23,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.09
+        },
+        {
+          "episode": 24,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.95
+        },
+        {
+          "episode": 25,
+          "success": false,
+          "steps": 300,
+          "wallclock": 9.53
+        },
+        {
+          "episode": 26,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.73
+        },
+        {
+          "episode": 27,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.98
+        },
+        {
+          "episode": 28,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.49
+        },
+        {
+          "episode": 29,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.82
+        },
+        {
+          "episode": 30,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.52
+        },
+        {
+          "episode": 31,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.69
+        },
+        {
+          "episode": 32,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.33
+        },
+        {
+          "episode": 33,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.84
+        },
+        {
+          "episode": 34,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.4
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 201,
+          "wallclock": 7.55
+        },
+        {
+          "episode": 36,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.58
+        },
+        {
+          "episode": 37,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.84
+        },
+        {
+          "episode": 38,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.95
+        },
+        {
+          "episode": 39,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.62
+        },
+        {
+          "episode": 40,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.5
+        },
+        {
+          "episode": 41,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.13
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 179,
+          "wallclock": 6.09
+        },
+        {
+          "episode": 43,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.76
+        },
+        {
+          "episode": 44,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.89
+        },
+        {
+          "episode": 45,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.25
+        },
+        {
+          "episode": 46,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.62
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "steps": 85,
+          "wallclock": 3.2
+        },
+        {
+          "episode": 48,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.37
+        },
+        {
+          "episode": 49,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.57
+        }
+      ]
+    },
+    {
+      "task_index": 6,
+      "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "success_rate": 0.94,
+      "successes": 47,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 128,
+          "wallclock": 4.62
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 120,
+          "wallclock": 4.13
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 107,
+          "wallclock": 3.62
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 203,
+          "wallclock": 6.89
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 115,
+          "wallclock": 3.95
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 121,
+          "wallclock": 4.27
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 111,
+          "wallclock": 3.95
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 124,
+          "wallclock": 4.4
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 135,
+          "wallclock": 4.76
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 108,
+          "wallclock": 3.83
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "steps": 116,
+          "wallclock": 4.05
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 115,
+          "wallclock": 3.95
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 120,
+          "wallclock": 4.16
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 117,
+          "wallclock": 4.16
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 116,
+          "wallclock": 4.07
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 276,
+          "wallclock": 9.75
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 115,
+          "wallclock": 3.9
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 116,
+          "wallclock": 4.11
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 134,
+          "wallclock": 4.81
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 107,
+          "wallclock": 3.84
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 110,
+          "wallclock": 3.78
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 128,
+          "wallclock": 4.53
+        },
+        {
+          "episode": 22,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.7
+        },
+        {
+          "episode": 23,
+          "success": true,
+          "steps": 105,
+          "wallclock": 3.46
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 120,
+          "wallclock": 4.12
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 121,
+          "wallclock": 4.5
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 110,
+          "wallclock": 4.12
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "steps": 120,
+          "wallclock": 4.34
+        },
+        {
+          "episode": 28,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.83
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "steps": 111,
+          "wallclock": 3.84
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "steps": 120,
+          "wallclock": 4.25
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 106,
+          "wallclock": 3.74
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 238,
+          "wallclock": 8.11
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 120,
+          "wallclock": 3.97
+        },
+        {
+          "episode": 34,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.19
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 138,
+          "wallclock": 4.87
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 114,
+          "wallclock": 4.6
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 127,
+          "wallclock": 4.89
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 137,
+          "wallclock": 5.3
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "steps": 121,
+          "wallclock": 4.51
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 109,
+          "wallclock": 3.68
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 136,
+          "wallclock": 4.83
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 168,
+          "wallclock": 5.92
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 119,
+          "wallclock": 4.38
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "steps": 117,
+          "wallclock": 4.07
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 253,
+          "wallclock": 9.07
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 120,
+          "wallclock": 4.13
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "steps": 118,
+          "wallclock": 4.07
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 121,
+          "wallclock": 4.38
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 125,
+          "wallclock": 4.51
+        }
+      ]
+    },
+    {
+      "task_index": 7,
+      "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "success_rate": 0.88,
+      "successes": 44,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 146,
+          "wallclock": 5.26
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 134,
+          "wallclock": 4.67
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 141,
+          "wallclock": 5.16
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 153,
+          "wallclock": 5.79
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 155,
+          "wallclock": 6.07
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 162,
+          "wallclock": 6.32
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 124,
+          "wallclock": 4.65
+        },
+        {
+          "episode": 7,
+          "success": false,
+          "steps": 300,
+          "wallclock": 12.23
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 138,
+          "wallclock": 5.26
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 143,
+          "wallclock": 5.42
+        },
+        {
+          "episode": 10,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.65
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 135,
+          "wallclock": 4.86
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 141,
+          "wallclock": 5.55
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 206,
+          "wallclock": 7.85
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 132,
+          "wallclock": 5.01
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 162,
+          "wallclock": 5.9
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 120,
+          "wallclock": 4.29
+        },
+        {
+          "episode": 17,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.84
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 123,
+          "wallclock": 4.53
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 125,
+          "wallclock": 4.61
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 139,
+          "wallclock": 5.23
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 137,
+          "wallclock": 5.1
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 127,
+          "wallclock": 4.49
+        },
+        {
+          "episode": 23,
+          "success": true,
+          "steps": 130,
+          "wallclock": 4.91
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 128,
+          "wallclock": 4.71
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 123,
+          "wallclock": 4.6
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 136,
+          "wallclock": 5.15
+        },
+        {
+          "episode": 27,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.7
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "steps": 131,
+          "wallclock": 4.98
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "steps": 145,
+          "wallclock": 5.28
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "steps": 172,
+          "wallclock": 6.38
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 138,
+          "wallclock": 5.41
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 128,
+          "wallclock": 4.79
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 156,
+          "wallclock": 5.88
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 168,
+          "wallclock": 6.71
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 133,
+          "wallclock": 5.01
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 149,
+          "wallclock": 5.94
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 141,
+          "wallclock": 5.28
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 144,
+          "wallclock": 5.43
+        },
+        {
+          "episode": 39,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.86
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 129,
+          "wallclock": 4.73
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 161,
+          "wallclock": 6.57
+        },
+        {
+          "episode": 42,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.89
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 131,
+          "wallclock": 5.17
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "steps": 143,
+          "wallclock": 5.39
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 121,
+          "wallclock": 4.45
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 126,
+          "wallclock": 4.87
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "steps": 126,
+          "wallclock": 4.88
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 120,
+          "wallclock": 4.45
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 164,
+          "wallclock": 6.31
+        }
+      ]
+    },
+    {
+      "task_index": 8,
+      "name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "success_rate": 0.8,
+      "successes": 40,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 263,
+          "wallclock": 9.97
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 232,
+          "wallclock": 8.41
+        },
+        {
+          "episode": 2,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.56
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 99,
+          "wallclock": 3.45
+        },
+        {
+          "episode": 4,
+          "success": false,
+          "steps": 300,
+          "wallclock": 9.54
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 99,
+          "wallclock": 3.31
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 189,
+          "wallclock": 6.52
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 133,
+          "wallclock": 4.83
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 107,
+          "wallclock": 3.95
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 100,
+          "wallclock": 3.54
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "steps": 130,
+          "wallclock": 4.68
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 108,
+          "wallclock": 3.84
+        },
+        {
+          "episode": 12,
+          "success": true,
+          "steps": 93,
+          "wallclock": 3.23
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 90,
+          "wallclock": 3.12
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 110,
+          "wallclock": 3.83
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 114,
+          "wallclock": 4.05
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 96,
+          "wallclock": 3.39
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 84,
+          "wallclock": 2.91
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 108,
+          "wallclock": 3.77
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 108,
+          "wallclock": 3.73
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 98,
+          "wallclock": 3.49
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 102,
+          "wallclock": 3.68
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 100,
+          "wallclock": 3.52
+        },
+        {
+          "episode": 23,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.52
+        },
+        {
+          "episode": 24,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.51
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 100,
+          "wallclock": 3.41
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 107,
+          "wallclock": 3.57
+        },
+        {
+          "episode": 27,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.17
+        },
+        {
+          "episode": 28,
+          "success": true,
+          "steps": 100,
+          "wallclock": 3.38
+        },
+        {
+          "episode": 29,
+          "success": true,
+          "steps": 116,
+          "wallclock": 3.88
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "steps": 113,
+          "wallclock": 3.83
+        },
+        {
+          "episode": 31,
+          "success": true,
+          "steps": 102,
+          "wallclock": 3.45
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 109,
+          "wallclock": 3.66
+        },
+        {
+          "episode": 33,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.38
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 98,
+          "wallclock": 3.39
+        },
+        {
+          "episode": 35,
+          "success": true,
+          "steps": 102,
+          "wallclock": 3.42
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 120,
+          "wallclock": 3.96
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 100,
+          "wallclock": 3.31
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 105,
+          "wallclock": 3.5
+        },
+        {
+          "episode": 39,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.87
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 157,
+          "wallclock": 5.44
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 265,
+          "wallclock": 9.04
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 122,
+          "wallclock": 4.17
+        },
+        {
+          "episode": 43,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.48
+        },
+        {
+          "episode": 44,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.13
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 112,
+          "wallclock": 3.9
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 121,
+          "wallclock": 4.25
+        },
+        {
+          "episode": 47,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.21
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 102,
+          "wallclock": 3.49
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 120,
+          "wallclock": 3.96
+        }
+      ]
+    },
+    {
+      "task_index": 9,
+      "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "success_rate": 0.88,
+      "successes": 44,
+      "episodes": 50,
+      "details": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 125,
+          "wallclock": 4.27
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 126,
+          "wallclock": 4.39
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 119,
+          "wallclock": 4.19
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 120,
+          "wallclock": 4.19
+        },
+        {
+          "episode": 4,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.61
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 124,
+          "wallclock": 4.39
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 140,
+          "wallclock": 4.97
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 124,
+          "wallclock": 4.31
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 136,
+          "wallclock": 5.02
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 138,
+          "wallclock": 4.92
+        },
+        {
+          "episode": 10,
+          "success": true,
+          "steps": 234,
+          "wallclock": 8.38
+        },
+        {
+          "episode": 11,
+          "success": true,
+          "steps": 118,
+          "wallclock": 4.25
+        },
+        {
+          "episode": 12,
+          "success": false,
+          "steps": 300,
+          "wallclock": 11.13
+        },
+        {
+          "episode": 13,
+          "success": true,
+          "steps": 129,
+          "wallclock": 4.61
+        },
+        {
+          "episode": 14,
+          "success": true,
+          "steps": 120,
+          "wallclock": 4.33
+        },
+        {
+          "episode": 15,
+          "success": true,
+          "steps": 114,
+          "wallclock": 4.13
+        },
+        {
+          "episode": 16,
+          "success": true,
+          "steps": 126,
+          "wallclock": 4.64
+        },
+        {
+          "episode": 17,
+          "success": true,
+          "steps": 170,
+          "wallclock": 5.94
+        },
+        {
+          "episode": 18,
+          "success": true,
+          "steps": 176,
+          "wallclock": 6.03
+        },
+        {
+          "episode": 19,
+          "success": true,
+          "steps": 131,
+          "wallclock": 4.51
+        },
+        {
+          "episode": 20,
+          "success": true,
+          "steps": 127,
+          "wallclock": 4.43
+        },
+        {
+          "episode": 21,
+          "success": true,
+          "steps": 132,
+          "wallclock": 4.93
+        },
+        {
+          "episode": 22,
+          "success": true,
+          "steps": 119,
+          "wallclock": 4.27
+        },
+        {
+          "episode": 23,
+          "success": true,
+          "steps": 124,
+          "wallclock": 4.34
+        },
+        {
+          "episode": 24,
+          "success": true,
+          "steps": 126,
+          "wallclock": 4.58
+        },
+        {
+          "episode": 25,
+          "success": true,
+          "steps": 198,
+          "wallclock": 6.98
+        },
+        {
+          "episode": 26,
+          "success": true,
+          "steps": 191,
+          "wallclock": 6.73
+        },
+        {
+          "episode": 27,
+          "success": true,
+          "steps": 144,
+          "wallclock": 5.02
+        },
+        {
+          "episode": 28,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.33
+        },
+        {
+          "episode": 29,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.45
+        },
+        {
+          "episode": 30,
+          "success": true,
+          "steps": 142,
+          "wallclock": 5.2
+        },
+        {
+          "episode": 31,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.99
+        },
+        {
+          "episode": 32,
+          "success": true,
+          "steps": 108,
+          "wallclock": 3.88
+        },
+        {
+          "episode": 33,
+          "success": true,
+          "steps": 151,
+          "wallclock": 5.5
+        },
+        {
+          "episode": 34,
+          "success": true,
+          "steps": 125,
+          "wallclock": 4.39
+        },
+        {
+          "episode": 35,
+          "success": false,
+          "steps": 300,
+          "wallclock": 10.73
+        },
+        {
+          "episode": 36,
+          "success": true,
+          "steps": 116,
+          "wallclock": 4.22
+        },
+        {
+          "episode": 37,
+          "success": true,
+          "steps": 186,
+          "wallclock": 6.57
+        },
+        {
+          "episode": 38,
+          "success": true,
+          "steps": 213,
+          "wallclock": 7.78
+        },
+        {
+          "episode": 39,
+          "success": true,
+          "steps": 143,
+          "wallclock": 5.4
+        },
+        {
+          "episode": 40,
+          "success": true,
+          "steps": 117,
+          "wallclock": 4.11
+        },
+        {
+          "episode": 41,
+          "success": true,
+          "steps": 146,
+          "wallclock": 5.41
+        },
+        {
+          "episode": 42,
+          "success": true,
+          "steps": 115,
+          "wallclock": 4.16
+        },
+        {
+          "episode": 43,
+          "success": true,
+          "steps": 132,
+          "wallclock": 4.64
+        },
+        {
+          "episode": 44,
+          "success": true,
+          "steps": 150,
+          "wallclock": 5.31
+        },
+        {
+          "episode": 45,
+          "success": true,
+          "steps": 151,
+          "wallclock": 5.55
+        },
+        {
+          "episode": 46,
+          "success": true,
+          "steps": 127,
+          "wallclock": 4.41
+        },
+        {
+          "episode": 47,
+          "success": true,
+          "steps": 131,
+          "wallclock": 4.5
+        },
+        {
+          "episode": 48,
+          "success": true,
+          "steps": 287,
+          "wallclock": 10.01
+        },
+        {
+          "episode": 49,
+          "success": true,
+          "steps": 118,
+          "wallclock": 4.53
+        }
+      ]
+    }
+  ],
+  "overall_success_rate": 0.798,
+  "overall_successes": 399,
+  "overall_episodes": 500,
+  "total_wallclock": 3484.4
+}

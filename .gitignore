@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Model weights and training data (too large for GitHub)
+checkpoints/
+*.ckpt
+*.pt
+*.safetensors
+/data/
+*.hdf5
+*.h5
+
+# Wandb local run dir
+wandb/
+
+# Scratch logs
+logs/
+
+# Legacy runs (pre-joint-run-b); keep only the release run
+runs/spatial-run1/
+runs/spatial-run2/
+
+# System / editor
+.DS_Store
+.idea/
+.vscode/
+.claude/
+
+# Project-internal notes (not for publication)
+CLAUDE.md

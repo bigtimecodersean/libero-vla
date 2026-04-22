@@ -1,0 +1,48 @@
+model:
+  vision:
+    name: google/siglip-base-patch16-224
+    image_size: 224
+    num_patches: 196
+    hidden_dim: 768
+    freeze: true
+
+  llm:
+    name: Qwen/Qwen2-1.5B
+    lora:
+      r: 16
+      alpha: 32
+      dropout: 0.05
+      target_modules: [q_proj, k_proj, v_proj, o_proj]
+
+  action_head:
+    action_dim: 7
+    chunk_size: 10      # K
+    num_queries: 10
+    num_flow_steps: 10
+    hidden_dim: 512
+    num_layers: 4
+    num_heads: 8
+
+data:
+  root: data/libero
+  suites: [libero_spatial, libero_object, libero_goal, libero_10]
+  image_size: 224
+  max_text_len: 32
+  action_chunk: 10
+  use_wrist: true
+  use_proprio: true
+  proprio_dim: 5
+  augment: true
+
+training:
+  batch_size: 32
+  lr: 5.0e-5
+  weight_decay: 0.01
+  warmup_steps: 500
+  max_steps: 50000
+  grad_accum: 1
+  grad_clip: 1.0
+  log_every: 50
+  ckpt_every: 2000
+  mixed_precision: bf16
+  seed: 42
