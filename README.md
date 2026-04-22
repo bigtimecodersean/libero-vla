@@ -143,7 +143,7 @@ OXE provides hundreds of thousands of trajectories across dozens of robot embodi
 
 1. **If you skip OXE, expect ~70% on base LIBERO at 1.5B.** That's the ballpark. Going higher without robotics pretraining likely requires either dramatically more in-domain data, a larger model, or both.
 2. **Object-grounded single-step tasks are the easy regime.** Get 80+% on object/goal suites with reasonable effort.
-3. **Multi-subtask tasks are the hard regime.** Long-horizon planning and inter-subtask state persistence appear to be capabilities that OXE pretraining supplies, and that LLM + vision priors alone do not.
+3. **Multi-subtask tasks are hard.** Long-horizon planning and inter-subtask state persistence appear to be capabilities that OXE pretraining supplies, and that LLM + vision priors alone do not.
 4. **Architecture details that mattered (ablations not reported here but worth knowing):**
    - Prefix-LM attention mask was meaningfully better than pure causal in early experiments
    - Flow matching head outperformed MSE regression on multi-modal action distributions
