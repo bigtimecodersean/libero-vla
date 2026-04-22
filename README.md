@@ -25,7 +25,7 @@ This repo is a learning-oriented write-up. It is not an attempt to beat state-of
 
 ```
 Image (224×224) ─> SigLIP (frozen) ─> MLP projector ─┐
-                                                     ├─> Qwen2-1.5B (LoRA) ─> Action queries ─> Flow matching head ─> (B, 10, 7)
+                                                     ├─> Qwen2-1.5B (LoRA) ─> Action queries ─> Flow matching head ─> (B, 10 timesteps, 7D joint actions)
 Instruction ─> Qwen2 tokenizer ──────────────────────┘
 ```
 
