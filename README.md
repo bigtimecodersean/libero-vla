@@ -15,7 +15,7 @@ This repo is a learning-oriented write-up. It is not an attempt to beat state-of
 
 ---
 
-## What this is (and isn't)
+## What this is  
 
 **Is**: a compact, reproducible reference implementation of a modern VLA — vision encoder + LLM backbone + flow matching action head — with an honest diagnostic on where a pretraining-free model succeeds and fails on LIBERO. A single weekend of H100 time reproduces the numbers below. Published VLAs (OpenVLA, Octo, π0, RDT) all use Open X-Embodiment — an 800k+ trajectory, 22M-step cross-embodiment pretraining corpus — before fine-tuning on LIBERO. That pretraining is the dominant factor in their headline scores. This project skips OXE entirely, which is why raw numbers aren't directly comparable.
 
