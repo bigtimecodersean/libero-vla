@@ -12,13 +12,6 @@ This repo is a learning-oriented write-up. It is not an attempt to beat state-of
 - **Training**: joint fine-tuning on all 4 LIBERO base suites for 50k steps on one H100. Only 28.4M trainable parameters (the rest is frozen vision + frozen LLM with LoRA adapters).
 - **Results on base LIBERO (H=10)**: spatial 78.0%, object 86.8%, goal 81.8%, long 35.4%, 4-suite average **70.5%**.
 - **Main finding**: the long suite's weakness is bimodal, not uniform. The model handles single-object multi-step tasks at 72–80%, but multi-object sequential tasks collapse to 20–30%, with one task involving two identical objects failing completely (0/50).
-
----
-
-## What this is  
-
-**Is**: a compact, reproducible reference implementation of a modern VLA — vision encoder + LLM backbone + flow matching action head — with an honest diagnostic on where a pretraining-free model succeeds and fails on LIBERO. A single weekend of H100 time reproduces the numbers below. Published VLAs (OpenVLA, Octo, π0, RDT) all use Open X-Embodiment — an 800k+ trajectory, 22M-step cross-embodiment pretraining corpus — before fine-tuning on LIBERO. That pretraining is the dominant factor in their headline scores. This project skips OXE entirely, which is why raw numbers aren't directly comparable.
-
 ---
 
 ## Architecture
